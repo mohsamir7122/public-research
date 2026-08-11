@@ -8,6 +8,10 @@ from pathlib import Path
 
 
 BLOCKED_SUFFIXES = {".dcm", ".dicom", ".p12", ".pfx", ".key", ".pem"}
+BLOCKED_PUBLIC_CONTENT_SUFFIXES = {
+    ".7z", ".azw3", ".docx", ".epub", ".jpeg", ".jpg", ".mobi", ".pdf", ".png",
+    ".pptx", ".rar", ".tif", ".tiff", ".webp", ".xlsx", ".zip",
+}
 BLOCKED_NAMES = {".env", "credentials.json", "secrets.json"}
 SKIP_DIRS = {".git", ".venv", "venv", "__pycache__", "dist", "build"}
 SECRET_PATTERNS = (
@@ -27,8 +31,13 @@ def audit(root: Path) -> list[str]:
         if any(part in SKIP_DIRS for part in path.parts) or not path.is_file():
             continue
         relative = path.relative_to(root)
-        if path.name in BLOCKED_NAMES or path.suffix.casefold() in BLOCKED_SUFFIXES:
+        name = path.name.casefold()
+        suffix = path.suffix.casefold()
+        if name in BLOCKED_NAMES or name.startswith(".env.") or suffix in BLOCKED_SUFFIXES:
             findings.append(f"blocked file type/name: {relative}")
+            continue
+        if suffix in BLOCKED_PUBLIC_CONTENT_SUFFIXES:
+            findings.append(f"binary/publication asset requires explicit provenance allowlist: {relative}")
             continue
         if path.stat().st_size > 5_000_000:
             findings.append(f"large file requires rights and sensitivity review: {relative}")

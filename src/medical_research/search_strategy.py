@@ -27,7 +27,7 @@ def _or_group(terms: list[str], formatter) -> str:
 def _concepts(config: dict[str, Any]) -> list[list[str]]:
     concepts = [_terms(config.get("population")), _terms(config.get("intervention"))]
     comparator = _terms(config.get("comparator"))
-    if comparator:
+    if comparator and config.get("include_comparator_in_primary_search", False):
         concepts.append(comparator)
     if config.get("include_outcomes_in_primary_search"):
         outcomes = _terms(config.get("outcomes"))

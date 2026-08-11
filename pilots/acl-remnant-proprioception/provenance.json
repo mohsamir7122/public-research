@@ -1,0 +1,54 @@
+{
+  "project_id": "ACL-REMNANT-PROPRIOCEPTION-001",
+  "generated_at": "2026-08-11T20:36:37+03:00",
+  "timezone": "Asia/Kuwait",
+  "tool": "medical-research-workbench",
+  "tool_version": "0.1.0",
+  "base_commit": "fa1248eeba5c6f8706af76e3d10ce213db6442a9",
+  "scope": "manually curated public metadata seed set; not a systematic-search export",
+  "artifacts": [
+    {
+      "path": "question.json",
+      "sha256": "a43cb7648c0f3a50fc43e7a75d8965d42a4d7fb18ffccedfab24c13983ae5a99",
+      "transformation": "author-reviewed structured PICO"
+    },
+    {
+      "path": "records.json",
+      "sha256": "834574aa6246adc52686308974b6cb7aa93a890328025b1f57ce33e22b3a8e88",
+      "transformation": "manual metadata transcription from stable official records; no full text"
+    },
+    {
+      "path": "search_strategy.json",
+      "sha256": "0115ca366733567b13ad3924e7a4ff09ac32db9ebcede8c9a26c129b6551fba2",
+      "transformation": "generated offline by medical-research build-search"
+    },
+    {
+      "path": "search_log.csv",
+      "sha256": "c78d578ad03a834c7df800903b11e8149944463e5b29cd424785e595c0e9dd3c",
+      "transformation": "records generated-but-not-executed status for all four candidate queries"
+    },
+    {
+      "path": "decision.json",
+      "sha256": "c50f55768b0008c0288cf035a070caeed3af8a6237d22b231e860814c77e19da",
+      "transformation": "dated accountable human novelty gate"
+    }
+  ],
+  "source_endpoints": [
+    {
+      "name": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "access_basis": "public bibliographic metadata"
+    },
+    {
+      "name": "PubMed Central",
+      "url": "https://pmc.ncbi.nlm.nih.gov/",
+      "access_basis": "public article landing-page metadata; no redistributed full text"
+    },
+    {
+      "name": "ClinicalTrials.gov",
+      "url": "https://clinicaltrials.gov/",
+      "access_basis": "public registry metadata"
+    }
+  ],
+  "redistribution_basis": "metadata only; third-party content retains its original rights"
+}

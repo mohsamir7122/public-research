@@ -1,0 +1,40 @@
+{
+  "project_id": "ACL-REMNANT-PROPRIOCEPTION-001",
+  "search_date": "2026-08-11",
+  "question": "Among patients undergoing primary ACL reconstruction, does tibial remnant preservation improve postoperative proprioception compared with standard remnant resection?",
+  "population": {
+    "terms": [
+      "anterior cruciate ligament",
+      "ACL injury",
+      "ACL rupture",
+      "ACL reconstruction"
+    ],
+    "mesh": ["Anterior Cruciate Ligament Injuries", "Anterior Cruciate Ligament Reconstruction"]
+  },
+  "intervention": {
+    "terms": [
+      "remnant preservation",
+      "remnant-preserving",
+      "stump preservation",
+      "stump-preserving",
+      "residual tissue preservation"
+    ]
+  },
+  "comparator": {
+    "terms": [
+      "standard ACL reconstruction",
+      "remnant resection",
+      "stump debridement"
+    ]
+  },
+  "outcomes": {
+    "terms": [
+      "proprioception",
+      "joint position sense",
+      "threshold to detect passive motion",
+      "postural stability"
+    ]
+  },
+  "include_comparator_in_primary_search": false,
+  "include_outcomes_in_primary_search": false
+}

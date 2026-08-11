@@ -27,6 +27,21 @@ class RepositoryAuditTests(unittest.TestCase):
             (root / "patient.dcm").write_bytes(b"DICOM")
             self.assertTrue(any("blocked file" in item for item in audit(root)))
 
+    def test_publication_and_image_assets_are_blocked_by_default(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / "book.PDF").write_bytes(b"%PDF synthetic")
+            (root / "questions.epub").write_bytes(b"synthetic epub")
+            (root / "figure.png").write_bytes(b"synthetic png")
+            findings = audit(root)
+            self.assertEqual(sum("requires explicit provenance allowlist" in item for item in findings), 3)
+
+    def test_env_variants_are_blocked(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / ".env.local").write_text("SAFE_PLACEHOLDER=true", encoding="utf-8")
+            self.assertTrue(any("blocked file type/name" in item for item in audit(root)))
+
 
 if __name__ == "__main__":
     unittest.main()

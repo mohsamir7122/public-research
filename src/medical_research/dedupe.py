@@ -10,7 +10,7 @@ from .models import StudyRecord
 
 
 DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Z0-9]+", re.IGNORECASE)
-NON_WORD_RE = re.compile(r"[^a-z0-9]+")
+NON_WORD_RE = re.compile(r"[\W_]+", re.UNICODE)
 
 
 @dataclass(frozen=True, slots=True)
@@ -32,13 +32,39 @@ def normalize_title(value: str) -> str:
 
 
 def title_similarity(left: str, right: str) -> float:
-    return SequenceMatcher(None, normalize_title(left), normalize_title(right)).ratio() * 100
+    normalized_left = normalize_title(left)
+    normalized_right = normalize_title(right)
+    if not normalized_left or not normalized_right:
+        return 0.0
+    return SequenceMatcher(None, normalized_left, normalized_right).ratio() * 100
 
 
-def _prefer(existing: StudyRecord, candidate: StudyRecord) -> StudyRecord:
+def _record_snapshot(record: StudyRecord) -> dict[str, object]:
+    return {
+        "source": record.source,
+        "source_id": record.source_id,
+        "url": record.url,
+        "provenance": record.provenance,
+    }
+
+
+def _merge_records(existing: StudyRecord, candidate: StudyRecord) -> StudyRecord:
     existing_score = sum(bool(getattr(existing, field)) for field in ("doi", "journal", "abstract", "url", "source_id"))
     candidate_score = sum(bool(getattr(candidate, field)) for field in ("doi", "journal", "abstract", "url", "source_id"))
-    return candidate if candidate_score > existing_score else existing
+    primary, secondary = (candidate, existing) if candidate_score > existing_score else (existing, candidate)
+    payload = primary.to_dict()
+    for field in ("title", "doi", "year", "journal", "abstract", "source", "source_id", "url"):
+        if not payload[field] and getattr(secondary, field):
+            payload[field] = getattr(secondary, field)
+    provenance = dict(primary.provenance)
+    merged_records = list(provenance.get("merged_records", [])) if isinstance(provenance.get("merged_records"), list) else []
+    for record in (existing, candidate):
+        snapshot = _record_snapshot(record)
+        if snapshot not in merged_records:
+            merged_records.append(snapshot)
+    provenance["merged_records"] = merged_records
+    payload["provenance"] = provenance
+    return StudyRecord(**payload)
 
 
 def deduplicate(records: Iterable[StudyRecord], title_threshold: float = 94.0) -> tuple[list[StudyRecord], list[DedupeDecision]]:
@@ -57,7 +83,7 @@ def deduplicate(records: Iterable[StudyRecord], title_threshold: float = 94.0) -
         candidate_doi = normalize_doi(candidate.doi)
         if candidate_doi and candidate_doi in doi_index:
             kept_index = doi_index[candidate_doi]
-            kept[kept_index] = _prefer(kept[kept_index], candidate)
+            kept[kept_index] = _merge_records(kept[kept_index], candidate)
             decisions.append(DedupeDecision(original_indexes[kept_index], candidate_index, "doi", 100.0))
             continue
 
@@ -72,7 +98,7 @@ def deduplicate(records: Iterable[StudyRecord], title_threshold: float = 94.0) -
                     match_index, match_score = index, score
 
         if match_index is not None:
-            kept[match_index] = _prefer(kept[match_index], candidate)
+            kept[match_index] = _merge_records(kept[match_index], candidate)
             decisions.append(DedupeDecision(original_indexes[match_index], candidate_index, "normalized_title_year", round(match_score, 2)))
             continue
 

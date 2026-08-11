@@ -1,6 +1,6 @@
 # Medical Research Workbench
 
-منصة عامة قابلة للتكرار لإدارة البحث الطبي، مع تركيز مبدئي على **Orthopaedics** و**Sports Medicine**. يبدأ المشروع من سؤال بحثي منظم، ثم يبني Search Strategy قابلة للتدقيق، ويستورد السجلات ويزيل التكرار، ويجهز ملفات Screening وData Extraction وRisk of Bias وStatistical Analysis Plan.
+منصة عامة قابلة للتكرار لإدارة البحث الطبي، مع تركيز مبدئي على **Orthopaedics** و**Sports Medicine**. يبدأ المشروع من سؤال بحثي منظم، ثم يبني Search Strategy قابلة للتدقيق، ويزيل التكرار من Metadata مُعطاة، ويجهز قوالب Screening وData Extraction وRisk of Bias وStatistical Analysis Plan.
 
 ## الحالة الحالية
 
@@ -11,6 +11,7 @@
 - قوالب منظمة للـProtocol وSearch Log وScreening وData Extraction وRisk of Bias وStatistical Analysis Plan.
 - فحص المستودع لمنع الأسرار والبيانات الحساسة والـFull text غير المصرح به.
 - اختبارات آلية وCI.
+- Pilot قابل لإعادة التشغيل يجمع Search Strategy مع إزالة التكرار من Metadata مجمدة، من دون الادعاء بأنه ينفذ Screening أوNovelty assessment تلقائيًا.
 
 الـScreening الذكي، وPRISMA، وEvidence tables، وJournal verification، وManuscript authoring ما تزال Roadmap ولا يجوز وصفها كقدرات منفذة قبل إضافتها واختبارها.
 
@@ -25,6 +26,11 @@ python -m unittest discover -s tests -v
 python -m medical_research build-search \
   --config examples/research_question.example.json \
   --output output/search_strategy.json
+
+python -m medical_research run-pilot \
+  --config pilots/acl-remnant-proprioception/question.json \
+  --records pilots/acl-remnant-proprioception/records.json \
+  --output output/acl-remnant-proprioception.json
 
 python scripts/audit_repository.py .
 ```
@@ -43,4 +49,4 @@ python scripts/audit_repository.py .
 
 ## License
 
-لم يُحدَّد ترخيص إعادة الاستخدام بعد. كون المستودع Public لا يمنح تلقائيًا حق إعادة استخدام محتواه خارج ما تسمح به قوانين GitHub وحقوق النشر.
+كود المستودع مرخّص بموجب `Apache-2.0`. لا يمتد هذا الترخيص تلقائيًا إلى المقالات أوالصور أوMetadata الخارجية؛ تبقى حقوق كل مصدر كما هي موثقة في Provenance الخاصة به.

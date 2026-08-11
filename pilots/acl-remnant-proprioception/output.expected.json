@@ -1,0 +1,143 @@
+{
+  "project_id": "ACL-REMNANT-PROPRIOCEPTION-001",
+  "search_date": "2026-08-11",
+  "queries": {
+    "pubmed": "(\"anterior cruciate ligament\"[Title/Abstract] OR \"ACL injury\"[Title/Abstract] OR \"ACL rupture\"[Title/Abstract] OR \"ACL reconstruction\"[Title/Abstract] OR \"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"Anterior Cruciate Ligament Reconstruction\"[MeSH Terms]) AND (\"remnant preservation\"[Title/Abstract] OR \"remnant-preserving\"[Title/Abstract] OR \"stump preservation\"[Title/Abstract] OR \"stump-preserving\"[Title/Abstract] OR \"residual tissue preservation\"[Title/Abstract])",
+    "scopus": "(TITLE-ABS-KEY(\"anterior cruciate ligament\") OR TITLE-ABS-KEY(\"ACL injury\") OR TITLE-ABS-KEY(\"ACL rupture\") OR TITLE-ABS-KEY(\"ACL reconstruction\")) AND (TITLE-ABS-KEY(\"remnant preservation\") OR TITLE-ABS-KEY(\"remnant-preserving\") OR TITLE-ABS-KEY(\"stump preservation\") OR TITLE-ABS-KEY(\"stump-preserving\") OR TITLE-ABS-KEY(\"residual tissue preservation\"))",
+    "web_of_science": "(TS=\"anterior cruciate ligament\" OR TS=\"ACL injury\" OR TS=\"ACL rupture\" OR TS=\"ACL reconstruction\") AND (TS=\"remnant preservation\" OR TS=\"remnant-preserving\" OR TS=\"stump preservation\" OR TS=\"stump-preserving\" OR TS=\"residual tissue preservation\")",
+    "embase": "(\"anterior cruciate ligament\":ti,ab,kw OR \"ACL injury\":ti,ab,kw OR \"ACL rupture\":ti,ab,kw OR \"ACL reconstruction\":ti,ab,kw) AND (\"remnant preservation\":ti,ab,kw OR \"remnant-preserving\":ti,ab,kw OR \"stump preservation\":ti,ab,kw OR \"stump-preserving\":ti,ab,kw OR \"residual tissue preservation\":ti,ab,kw)"
+  },
+  "counts": {
+    "input_records": 7,
+    "deduplicated_records": 6,
+    "duplicates_removed": 1
+  },
+  "records": [
+    {
+      "title": "Remnant Preservation in Anterior Cruciate Ligament Reconstruction Versus Non-Preservation Methods: A Systematic Review and Meta-Analysis",
+      "doi": "10.1111/os.70167",
+      "year": 2025,
+      "journal": "Orthopaedic Surgery",
+      "abstract": "",
+      "source": "PubMed",
+      "source_id": "PMID:40905507",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40905507/",
+      "provenance": {
+        "accessed_at": "2026-08-11",
+        "verification": "official PubMed record opened through indexed result",
+        "rights_basis": "bibliographic metadata only",
+        "merged_records": [
+          {
+            "source": "PubMed",
+            "source_id": "PMID:40905507",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40905507/",
+            "provenance": {
+              "accessed_at": "2026-08-11",
+              "verification": "official PubMed record opened through indexed result",
+              "rights_basis": "bibliographic metadata only"
+            }
+          },
+          {
+            "source": "PubMed Central",
+            "source_id": "PMCID:PMC12580229",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12580229/",
+            "provenance": {
+              "accessed_at": "2026-08-11",
+              "verification": "official PMC record opened through indexed result",
+              "rights_basis": "bibliographic metadata only; article reports CC BY 4.0"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "title": "Comparing Clinical Outcomes and Knee Stability in Remnant-Preserving ACL Reconstruction Versus Standard ACL Reconstruction: A Systematic Review and Meta-analysis",
+      "doi": "10.1177/03635465231225984",
+      "year": 2024,
+      "journal": "The American Journal of Sports Medicine",
+      "abstract": "",
+      "source": "PubMed",
+      "source_id": "PMID:38551115",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38551115/",
+      "provenance": {
+        "accessed_at": "2026-08-11",
+        "verification": "official PubMed record opened through indexed result",
+        "rights_basis": "bibliographic metadata only"
+      }
+    },
+    {
+      "title": "Remnant preservation may improve proprioception after anterior cruciate ligament reconstruction",
+      "doi": "10.1186/s10195-022-00641-y",
+      "year": 2022,
+      "journal": "Journal of Orthopaedics and Traumatology",
+      "abstract": "",
+      "source": "PubMed",
+      "source_id": "PMID:35478294",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35478294/",
+      "provenance": {
+        "accessed_at": "2026-08-11",
+        "verification": "official PubMed record opened through indexed result",
+        "rights_basis": "bibliographic metadata only; article reports CC BY 4.0"
+      }
+    },
+    {
+      "title": "Anterior cruciate ligament reconstruction with remnant preservation: a prospective, randomized controlled study",
+      "doi": "10.1177/0363546512461481",
+      "year": 2012,
+      "journal": "The American Journal of Sports Medicine",
+      "abstract": "",
+      "source": "PubMed",
+      "source_id": "PMID:23075805",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23075805/",
+      "provenance": {
+        "accessed_at": "2026-08-11",
+        "verification": "official PubMed record opened through indexed result",
+        "rights_basis": "bibliographic metadata only"
+      }
+    },
+    {
+      "title": "Proprioceptive Function, Postural Stability & Clinical Outcome After Stump Preserving Anterior Cruciate Ligament Reconstruction Surgery - A Comparative Study",
+      "doi": "",
+      "year": 2011,
+      "journal": "",
+      "abstract": "",
+      "source": "ClinicalTrials.gov",
+      "source_id": "NCT01348945",
+      "url": "https://clinicaltrials.gov/study/NCT01348945",
+      "provenance": {
+        "accessed_at": "2026-08-11",
+        "verification": "official ClinicalTrials.gov record opened",
+        "rights_basis": "registry metadata only"
+      }
+    },
+    {
+      "title": "Effect of tibial remnant preservation on clinical, radiological and surgical outcomes in anterior cruciate ligament reconstruction: a retrospective single-center comparative study",
+      "doi": "10.1186/s12891-025-09473-3",
+      "year": 2026,
+      "journal": "BMC Musculoskeletal Disorders",
+      "abstract": "",
+      "source": "PubMed",
+      "source_id": "PMID:41593610",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41593610/",
+      "provenance": {
+        "accessed_at": "2026-08-11",
+        "verification": "official PubMed record and publisher landing page opened through indexed results",
+        "rights_basis": "bibliographic metadata only"
+      }
+    }
+  ],
+  "deduplication_decisions": [
+    {
+      "kept_index": 0,
+      "removed_index": 1,
+      "reason": "doi",
+      "score": 100.0
+    }
+  ],
+  "human_review_required": [
+    "novelty and overlap with recent reviews",
+    "study eligibility",
+    "clinical interpretation",
+    "risk of bias"
+  ]
+}

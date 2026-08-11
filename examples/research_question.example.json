@@ -11,6 +11,7 @@
   "comparator": {
     "terms": ["standard ACL reconstruction", "remnant resection"]
   },
+  "include_comparator_in_primary_search": false,
   "outcomes": {
     "terms": ["proprioception", "joint position sense"]
   },

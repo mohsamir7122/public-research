@@ -1,0 +1,9 @@
+{
+  "project_id": "ACL-REMNANT-PROPRIOCEPTION-001",
+  "queries": {
+    "pubmed": "(\"anterior cruciate ligament\"[Title/Abstract] OR \"ACL injury\"[Title/Abstract] OR \"ACL rupture\"[Title/Abstract] OR \"ACL reconstruction\"[Title/Abstract] OR \"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"Anterior Cruciate Ligament Reconstruction\"[MeSH Terms]) AND (\"remnant preservation\"[Title/Abstract] OR \"remnant-preserving\"[Title/Abstract] OR \"stump preservation\"[Title/Abstract] OR \"stump-preserving\"[Title/Abstract] OR \"residual tissue preservation\"[Title/Abstract])",
+    "scopus": "(TITLE-ABS-KEY(\"anterior cruciate ligament\") OR TITLE-ABS-KEY(\"ACL injury\") OR TITLE-ABS-KEY(\"ACL rupture\") OR TITLE-ABS-KEY(\"ACL reconstruction\")) AND (TITLE-ABS-KEY(\"remnant preservation\") OR TITLE-ABS-KEY(\"remnant-preserving\") OR TITLE-ABS-KEY(\"stump preservation\") OR TITLE-ABS-KEY(\"stump-preserving\") OR TITLE-ABS-KEY(\"residual tissue preservation\"))",
+    "web_of_science": "(TS=\"anterior cruciate ligament\" OR TS=\"ACL injury\" OR TS=\"ACL rupture\" OR TS=\"ACL reconstruction\") AND (TS=\"remnant preservation\" OR TS=\"remnant-preserving\" OR TS=\"stump preservation\" OR TS=\"stump-preserving\" OR TS=\"residual tissue preservation\")",
+    "embase": "(\"anterior cruciate ligament\":ti,ab,kw OR \"ACL injury\":ti,ab,kw OR \"ACL rupture\":ti,ab,kw OR \"ACL reconstruction\":ti,ab,kw) AND (\"remnant preservation\":ti,ab,kw OR \"remnant-preserving\":ti,ab,kw OR \"stump preservation\":ti,ab,kw OR \"stump-preserving\":ti,ab,kw OR \"residual tissue preservation\":ti,ab,kw)"
+  }
+}

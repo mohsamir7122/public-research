@@ -9,6 +9,7 @@ CONFIG = {
     "comparator": {"terms": ["standard ACL reconstruction"]},
     "outcomes": {"terms": ["proprioception"]},
     "include_outcomes_in_primary_search": False,
+    "include_comparator_in_primary_search": False,
 }
 
 
@@ -24,6 +25,16 @@ class SearchStrategyTests(unittest.TestCase):
     def test_outcome_excluded_by_default(self):
         queries = build_queries(CONFIG)
         self.assertTrue(all("proprioception" not in query for query in queries.values()))
+
+    def test_comparator_excluded_by_default_for_sensitivity(self):
+        queries = build_queries(CONFIG)
+        self.assertTrue(all("standard ACL reconstruction" not in query for query in queries.values()))
+
+    def test_comparator_can_be_included_explicitly(self):
+        config = dict(CONFIG)
+        config["include_comparator_in_primary_search"] = True
+        queries = build_queries(config)
+        self.assertTrue(all("standard ACL reconstruction" in query for query in queries.values()))
 
     def test_requires_two_concepts(self):
         with self.assertRaises(ValueError):
