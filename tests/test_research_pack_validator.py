@@ -1,4 +1,5 @@
 import copy
+import hashlib
 import importlib.util
 import unittest
 from pathlib import Path
@@ -22,6 +23,7 @@ def title(text):
 
 
 def valid_pack():
+    frozen_evidence = "STROBE cohort checklist index; captured 2026-08-12"
     titles = [
         "ACL remnant preservation and KOOS Pain at 12 months: a retrospective cohort study",
         "KOOS Pain after remnant-preserving versus standard ACL reconstruction: a retrospective cohort study",
@@ -57,7 +59,8 @@ def valid_pack():
                 "title": "STROBE",
                 "url_or_path": "https://www.equator-network.org/reporting-guidelines/strobe/",
                 "retrieved_at": "2026-08-12",
-                "checksum": "0" * 64,
+                "checksum": hashlib.sha256(frozen_evidence.encode("utf-8")).hexdigest(),
+                "frozen_evidence": frozen_evidence,
                 "rights_basis": "official_webpage",
                 "allowed_use": "protocol_support",
                 "evidence_location": "STROBE checklists",
@@ -186,9 +189,74 @@ class ResearchPackValidatorTests(unittest.TestCase):
         pack = valid_pack()
         pack["readiness"]["status"] = "submission_ready"
         errors = MODULE.validate_pack(pack)
-        self.assertTrue(any("human reviews" in error for error in errors))
-        self.assertTrue(any("verified target-journal" in error for error in errors))
+        self.assertTrue(any("investigator review approval" in error for error in errors))
+        self.assertTrue(any("verified eligible target journal" in error for error in errors))
         self.assertTrue(any("blocking unresolved" in error for error in errors))
+
+    def test_free_text_phi_acceptance_and_nested_scores_are_rejected(self):
+        pack = valid_pack()
+        pack["notes"] = "Patient name: Alice Example; MRN: 123456; acceptance likelihood is 99 percent"
+        pack["title_candidates"][0]["title_quality"]["score"] = 100
+        pack["title_candidates"][0]["journal_fit"]["score"] = 100
+        errors = MODULE.validate_pack(pack)
+        self.assertTrue(any("acceptance prediction" in error for error in errors))
+        self.assertTrue(any("probable participant" in error for error in errors))
+        self.assertGreaterEqual(sum("numeric title/journal scores" in error for error in errors), 2)
+
+    def test_predata_result_synonyms_are_rejected(self):
+        pack = valid_pack()
+        verbs = ("outperforms", "higher", "advantage", "gains", "favorable", "benefit")
+        pack["title_candidates"] = [
+            title(f"ACL remnant preservation {verb} KOOS Pain: a retrospective cohort study") for verb in verbs
+        ]
+        errors = MODULE.validate_pack(pack)
+        self.assertGreaterEqual(sum("pre-data title asserts results" in error for error in errors), 6)
+
+    def test_fabricated_official_domain_and_unlinked_requirement_fail(self):
+        pack = valid_pack()
+        evidence = "Invented scope claim"
+        checksum = hashlib.sha256(evidence.encode("utf-8")).hexdigest()
+        pack["sources"].append(
+            {
+                "source_id": "fake-journal",
+                "kind": "official_journal_requirements",
+                "title": "Fabricated source",
+                "url_or_path": "https://fabricated.invalid/guide",
+                "final_url": "https://fabricated.invalid/guide",
+                "retrieved_at": "2026-08-12",
+                "frozen_evidence": evidence,
+                "checksum": checksum,
+                "rights_basis": "official_webpage",
+                "allowed_use": "journal_requirement",
+                "evidence_location": "Scope",
+            }
+        )
+        pack["journal_targets"] = [
+            {
+                "journal_id": "fake",
+                "name": "Fabricated Journal",
+                "requirements_status": "verified",
+                "fit_status": "eligible",
+                "official_url": "https://fabricated.invalid/guide",
+                "verified_at": "2026-08-12",
+                "requirements": [
+                    {
+                        "field": field,
+                        "value": "invented",
+                        "source_id": "missing-ledger-source",
+                        "official_url": "https://fabricated.invalid/guide",
+                        "final_url": "https://fabricated.invalid/guide",
+                        "evidence_location": field,
+                        "verified_at": "2026-08-12",
+                        "checksum": checksum,
+                    }
+                    for field in ("scope", "article_type")
+                ],
+            }
+        ]
+        errors = MODULE.validate_pack(pack)
+        self.assertTrue(any("placeholder/non-official" in error for error in errors))
+        self.assertTrue(any("existing source-ledger" in error for error in errors))
 
     def test_adversarial_pack_cannot_pass_as_structurally_valid(self):
         pack = copy.deepcopy(valid_pack())
@@ -200,7 +268,12 @@ class ResearchPackValidatorTests(unittest.TestCase):
             }
         )
         pack["statistics"].update(
-            {"effect_measure": "p value", "missing_data": {"primary_assumption": "none", "primary_method": "ignore", "sensitivity_analysis": "none"}}
+            {
+                "effect_measure": "p value",
+                "missing_data": {"primary_assumption": "none", "primary_method": "ignore", "sensitivity_analysis": "none"},
+                "objective_analysis_map": "none",
+                "sensitivity_analyses": ["none"],
+            }
         )
         pack["journal_targets"] = []
         pack["title_candidates"] = [title("ACL technique proves superiority")]
