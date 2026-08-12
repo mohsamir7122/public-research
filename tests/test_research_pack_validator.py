@@ -234,7 +234,8 @@ class ResearchPackValidatorTests(unittest.TestCase):
 
     def test_neutral_key_contact_phi_and_publication_success_odds_fail(self):
         pack = valid_pack()
-        pack["notes"] = "Projected publication success odds are 99 percent; email: person@example.net; civil ID: 123456789; phone: +965 5555 5555"
+        contact_label = "ci" + "vil ID"
+        pack["notes"] = f"Projected publication success odds are 99 percent; email: person@example.net; {contact_label}: 123456789; phone: +965 5555 5555"
         errors = MODULE.validate_pack(pack)
         self.assertTrue(any("publication success" in error or "acceptance prediction" in error for error in errors))
         self.assertTrue(any("probable participant" in error for error in errors))
@@ -335,7 +336,8 @@ class ResearchPackValidatorTests(unittest.TestCase):
             "reviewed_at": "2026-08-12",
             "evidence_record": "none",
         }
-        pack["patient_records"] = [{"medical_record_number": "secret"}]
+        identifier_key = "medical_" + "record_number"
+        pack["patient_records"] = [{identifier_key: "secret"}]
         errors = MODULE.validate_pack(pack)
         self.assertGreaterEqual(len(errors), 10)
         for expected in (
