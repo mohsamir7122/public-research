@@ -129,12 +129,19 @@ def valid_pack():
         ],
         "title_candidates": [title(text_value) for text_value in titles],
         "style_profile": {"status": "insufficient_evidence", "reason": "No authorized journal-specific full-text sample supplied", "samples": []},
-        "no_fabrication_audit": {"completed": True, "fabricated_claims_found": False, "checks": ["sources", "journal rules", "statistics"]},
+        "no_fabrication_audit": {
+            "completed": True,
+            "fabricated_claims_found": False,
+            "checks": ["sources", "journal rules", "statistics"],
+            "reviewer_name": "Independent audit fixture",
+            "reviewed_at": "2026-08-12",
+            "evidence_record": "validator-test-review-001",
+        },
         "human_reviews": {
-            "investigator": "pending",
-            "statistician": "pending",
-            "ethics_data_governance": "pending",
-            "journal_requirements": "pending",
+            "investigator": {"status": "pending"},
+            "statistician": {"status": "pending"},
+            "ethics_data_governance": {"status": "pending"},
+            "journal_requirements": {"status": "pending"},
         },
         "readiness": {"status": "draft", "limitations": ["Journal requirements pending"]},
         "unresolved": [{"item": "Verify journal requirements", "blocking": True, "owner": "investigator"}],
@@ -212,6 +219,26 @@ class ResearchPackValidatorTests(unittest.TestCase):
         errors = MODULE.validate_pack(pack)
         self.assertGreaterEqual(sum("pre-data title asserts results" in error for error in errors), 6)
 
+    def test_adaptive_result_synonyms_ratings_and_empty_statistics_are_rejected(self):
+        pack = valid_pack()
+        verbs = ("enhances", "boosts", "excels", "optimizes", "leads to stronger", "confers benefit")
+        pack["title_candidates"] = [
+            title(f"ACL remnant preservation {verb} KOOS Pain: a retrospective cohort study") for verb in verbs
+        ]
+        pack["title_candidates"][0]["title_quality"]["rating"] = 100
+        pack["statistics"]["model_diagnostics"] = "pending finalization"
+        errors = MODULE.validate_pack(pack)
+        self.assertGreaterEqual(sum("pre-data title asserts results" in error for error in errors), 6)
+        self.assertTrue(any("scores or ratings" in error for error in errors))
+        self.assertTrue(any("model_diagnostics" in error for error in errors))
+
+    def test_neutral_key_contact_phi_and_publication_success_odds_fail(self):
+        pack = valid_pack()
+        pack["notes"] = "Projected publication success odds are 99 percent; email: person@example.net; civil ID: 123456789; phone: +965 5555 5555"
+        errors = MODULE.validate_pack(pack)
+        self.assertTrue(any("publication success" in error or "acceptance prediction" in error for error in errors))
+        self.assertTrue(any("probable participant" in error for error in errors))
+
     def test_fabricated_official_domain_and_unlinked_requirement_fail(self):
         pack = valid_pack()
         evidence = "Invented scope claim"
@@ -278,7 +305,14 @@ class ResearchPackValidatorTests(unittest.TestCase):
         pack["journal_targets"] = []
         pack["title_candidates"] = [title("ACL technique proves superiority")]
         pack["style_profile"] = {"status": "profiled", "samples": []}
-        pack["no_fabrication_audit"] = {"completed": False, "fabricated_claims_found": True, "checks": []}
+        pack["no_fabrication_audit"] = {
+            "completed": False,
+            "fabricated_claims_found": True,
+            "checks": [],
+            "reviewer_name": "none",
+            "reviewed_at": "2026-08-12",
+            "evidence_record": "none",
+        }
         pack["patient_records"] = [{"medical_record_number": "secret"}]
         errors = MODULE.validate_pack(pack)
         self.assertGreaterEqual(len(errors), 10)

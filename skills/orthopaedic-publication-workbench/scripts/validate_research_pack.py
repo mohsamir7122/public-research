@@ -183,7 +183,21 @@ RESULT_WORDS = {
     "worse",
 }
 STOPWORDS = {"a", "an", "and", "as", "at", "by", "for", "from", "in", "of", "on", "the", "to", "with"}
-SEMANTICALLY_EMPTY = {"", "50 is enough", "n/a", "na", "none", "not applicable", "tbd", "unknown"}
+SEMANTICALLY_EMPTY = {
+    "",
+    "50 is enough",
+    "n/a",
+    "na",
+    "none",
+    "not applicable",
+    "not assessed",
+    "pending",
+    "pending finalization",
+    "tbd",
+    "to be decided",
+    "to be decided later",
+    "unknown",
+}
 JOURNAL_READY_FIELDS = {
     "abstract",
     "ai_llm_disclosure",
@@ -225,7 +239,8 @@ def _is_nonempty(value: Any) -> bool:
 
 def _is_meaningful(value: Any) -> bool:
     if isinstance(value, str):
-        return value.strip().casefold() not in SEMANTICALLY_EMPTY
+        normalized = re.sub(r"\s+", " ", value.strip().casefold())
+        return normalized not in SEMANTICALLY_EMPTY and not normalized.startswith(("pending ", "tbd ", "to be decided"))
     return _is_nonempty(value)
 
 
@@ -260,8 +275,8 @@ def _string_value_issues(value: str, path: str) -> list[str]:
     lowered = value.casefold()
     issues: list[str] = []
     acceptance = re.search(
-        r"\b(?:acceptance|accepted|editorial outcome)\b.{0,45}\b(?:chance|likelihood|probability|score|percent)\b"
-        r"|\b(?:chance|likelihood|probability|score)\b.{0,45}\b(?:acceptance|accepted)\b",
+        r"\b(?:acceptance|accepted|editorial outcome|publication success)\b.{0,45}\b(?:chance|likelihood|odds|probability|rating|score|percent)\b"
+        r"|\b(?:chance|likelihood|odds|probability|rating|score)\b.{0,45}\b(?:acceptance|accepted|publication success)\b",
         lowered,
     )
     if acceptance:
@@ -277,6 +292,9 @@ def _string_value_issues(value: str, path: str) -> list[str]:
         r"\bmedical record number\s*[:#=]\s*[a-z0-9-]{3,}\b",
         r"\bpatient name\s*[:#=]\s*[a-z][a-z .'-]{2,}\b",
         r"\bdate of birth\s*[:#=]\s*\d{1,4}[-/]\d{1,2}[-/]\d{1,4}\b",
+        r"\b(?:email|e-mail)\s*[:#=]?\s*[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}\b",
+        r"\b(?:civil|national)\s*(?:id|identifier|number)\s*[:#=]?\s*[a-z0-9-]{5,}\b",
+        r"\b(?:phone|telephone|mobile)\s*[:#=]?\s*\+?[0-9][0-9 ()-]{6,}\b",
     )
     if any(re.search(pattern, lowered) for pattern in phi_patterns):
         issues.append(f"{path}: probable participant identifier/PHI found in free text")
@@ -288,8 +306,8 @@ def _numeric_score_issues(value: Any, path: str) -> list[str]:
     if isinstance(value, dict):
         for key, child in value.items():
             child_path = f"{path}.{key}"
-            if "score" in _normalized_key(key) and isinstance(child, (int, float)):
-                issues.append(f"{child_path}: numeric title/journal scores are not allowed")
+            if any(token in _normalized_key(key) for token in ("score", "rating")) and isinstance(child, (int, float)):
+                issues.append(f"{child_path}: numeric title/journal scores or ratings are not allowed")
             issues.extend(_numeric_score_issues(child, child_path))
     elif isinstance(value, list):
         for index, child in enumerate(value):
@@ -503,7 +521,24 @@ def _validate_titles(pack: dict[str, Any], project: dict[str, Any], errors: list
         if hype:
             errors.append(f"{path}.text: promotional wording is not allowed: {', '.join(hype)}")
         if planned:
-            result_stems = ("achiev", "advantag", "benefit", "favour", "favor", "gain", "outperform", "produc", "yield")
+            result_stems = (
+                "achiev",
+                "advantag",
+                "benefit",
+                "boost",
+                "confer",
+                "enhanc",
+                "excel",
+                "favour",
+                "favor",
+                "gain",
+                "lead",
+                "optimiz",
+                "optimis",
+                "outperform",
+                "produc",
+                "yield",
+            )
             result_language = sorted(
                 {word for word in title_words if word in RESULT_WORDS or word.startswith(result_stems)}
             )
@@ -689,6 +724,10 @@ def _validate_style_and_readiness(
         errors.append("$.no_fabrication_audit.fabricated_claims_found: must be false after remediation")
     if not isinstance(audit.get("checks"), list) or not audit["checks"]:
         errors.append("$.no_fabrication_audit.checks: required non-empty list")
+    for field in ("reviewer_name", "reviewed_at", "evidence_record"):
+        if not _is_meaningful(audit.get(field)):
+            errors.append(f"$.no_fabrication_audit.{field}: required independent audit provenance")
+    _parse_date(audit.get("reviewed_at"), "$.no_fabrication_audit.reviewed_at", errors)
 
     minimum_gate = _require_mapping(project, "minimum_input_gate", "$.project", errors)
     gate_fields = (
@@ -705,8 +744,17 @@ def _validate_style_and_readiness(
 
     reviews = _require_mapping(pack, "human_reviews", "$", errors)
     for field in ("investigator", "statistician", "ethics_data_governance", "journal_requirements"):
-        if reviews.get(field) not in {"approved", "not_required", "pending"}:
-            errors.append(f"$.human_reviews.{field}: invalid or missing review state")
+        review = reviews.get(field)
+        if not isinstance(review, dict):
+            errors.append(f"$.human_reviews.{field}: required review-evidence object")
+            continue
+        if review.get("status") not in {"approved", "not_required", "pending"}:
+            errors.append(f"$.human_reviews.{field}.status: invalid or missing review state")
+        if review.get("status") == "approved":
+            for evidence_field in ("reviewer_name", "reviewed_at", "evidence_record"):
+                if not _is_meaningful(review.get(evidence_field)):
+                    errors.append(f"$.human_reviews.{field}.{evidence_field}: required when approved")
+            _parse_date(review.get("reviewed_at"), f"$.human_reviews.{field}.reviewed_at", errors)
     readiness = _require_mapping(pack, "readiness", "$", errors)
     if readiness.get("status") not in {"draft", "under_review", "submission_ready"}:
         errors.append("$.readiness.status: invalid or missing status")
@@ -726,12 +774,12 @@ def _validate_style_and_readiness(
         if not all(minimum_gate.get(field) is True for field in gate_fields):
             errors.append("$.readiness: submission_ready requires every minimum-input gate")
         for field in ("investigator", "statistician", "journal_requirements"):
-            if reviews.get(field) != "approved":
+            if not isinstance(reviews.get(field), dict) or reviews[field].get("status") != "approved":
                 errors.append(f"$.readiness: submission_ready requires {field} review approval")
         if project.get("study_design") in HUMAN_OR_ANIMAL_DESIGNS:
-            if reviews.get("ethics_data_governance") != "approved":
+            if not isinstance(reviews.get("ethics_data_governance"), dict) or reviews["ethics_data_governance"].get("status") != "approved":
                 errors.append("$.readiness: human/animal work requires ethics_data_governance approval")
-        elif reviews.get("ethics_data_governance") not in {"approved", "not_required"}:
+        elif not isinstance(reviews.get("ethics_data_governance"), dict) or reviews["ethics_data_governance"].get("status") not in {"approved", "not_required"}:
             errors.append("$.readiness: ethics_data_governance review is unresolved")
         if any(isinstance(item, dict) and item.get("blocking") is True for item in unresolved):
             errors.append("$.readiness: submission_ready cannot have blocking unresolved questions")
