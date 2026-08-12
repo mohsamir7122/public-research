@@ -1,0 +1,4 @@
+interface:
+  display_name: "Orthopaedic Publication Workbench"
+  short_description: "Evidence-backed protocols, journal fit, and statistics"
+  default_prompt: "Use $orthopaedic-publication-workbench to prepare an evidence-backed orthopaedic research publication pack."
