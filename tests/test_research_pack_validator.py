@@ -285,6 +285,28 @@ class ResearchPackValidatorTests(unittest.TestCase):
         self.assertTrue(any("placeholder/non-official" in error for error in errors))
         self.assertTrue(any("existing source-ledger" in error for error in errors))
 
+    def test_real_but_nonpublisher_domain_cannot_be_verified_authority(self):
+        pack = valid_pack()
+        evidence = "Self-authored journal rules"
+        checksum = hashlib.sha256(evidence.encode("utf-8")).hexdigest()
+        pack["sources"].append(
+            {
+                "source_id": "wiki-rules",
+                "kind": "official_journal_requirements",
+                "title": "Not official journal rules",
+                "url_or_path": "https://en.wikipedia.org/wiki/Journal",
+                "final_url": "https://en.wikipedia.org/wiki/Journal",
+                "retrieved_at": "2026-08-12",
+                "frozen_evidence": evidence,
+                "checksum": checksum,
+                "rights_basis": "official_webpage",
+                "allowed_use": "journal_requirement",
+                "evidence_location": "Article",
+            }
+        )
+        errors = MODULE.validate_pack(pack)
+        self.assertTrue(any("authority-domain registry" in error for error in errors))
+
     def test_adversarial_pack_cannot_pass_as_structurally_valid(self):
         pack = copy.deepcopy(valid_pack())
         pack["project"].update(

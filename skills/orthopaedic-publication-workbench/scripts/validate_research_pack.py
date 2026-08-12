@@ -209,10 +209,47 @@ JOURNAL_READY_FIELDS = {
     "title",
 }
 HUMAN_OR_ANIMAL_DESIGNS = set(DESIGN_REQUIREMENTS) - {"systematic_review", "meta_analysis"}
+KNOWN_JOURNAL_AUTHORITY_DOMAINS = {
+    "academic.oup.com",
+    "acpjournals.org",
+    "biomedcentral.com",
+    "bmj.com",
+    "dovepress.com",
+    "elsevier.com",
+    "frontiersin.org",
+    "humankinetics.com",
+    "iospress.com",
+    "jamanetwork.com",
+    "jospt.org",
+    "jssm.org",
+    "karger.com",
+    "link.springer.com",
+    "lww.com",
+    "mdpi.com",
+    "nature.com",
+    "nejm.org",
+    "onlinelibrary.wiley.com",
+    "plos.org",
+    "sagepub.com",
+    "sciencedirect.com",
+    "springer.com",
+    "tandfonline.com",
+    "thieme-connect.com",
+    "wiley.com",
+    "wolterskluwer.com",
+}
 
 
 def _normalized_key(key: str) -> str:
     return re.sub(r"[^a-z0-9]", "", key.casefold())
+
+
+def sha256_file(path: Path, chunk_size: int = 1024 * 1024) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        while chunk := handle.read(chunk_size):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def _parse_date(value: Any, path: str, errors: list[str]) -> date | None:
@@ -269,6 +306,13 @@ def _validate_https_url(value: Any, path: str, errors: list[str]) -> None:
         address = None
     if address and not address.is_global:
         errors.append(f"{path}: private/reserved IP hosts are not allowed for verified evidence")
+
+
+def _known_journal_authority(value: Any) -> bool:
+    if not isinstance(value, str):
+        return False
+    host = (urlparse(value).hostname or "").casefold()
+    return any(host == domain or host.endswith(f".{domain}") for domain in KNOWN_JOURNAL_AUTHORITY_DOMAINS)
 
 
 def _string_value_issues(value: str, path: str) -> list[str]:
@@ -403,9 +447,19 @@ def _validate_sources(pack: dict[str, Any], errors: list[str]) -> dict[str, dict
             errors.append(f"{path}: style analysis requires user-owned or explicitly licensed full text")
         if allowed_use == "style_analysis" and rights == "user_owned" and not _is_meaningful(source.get("authorization_evidence")):
             errors.append(f"{path}.authorization_evidence: required when user ownership authorizes style analysis")
+        if allowed_use == "style_analysis":
+            full_text_path = Path(source_location).expanduser()
+            if source_location.startswith(("https://", "http://")) or not full_text_path.is_file():
+                errors.append(f"{path}.url_or_path: style evidence must reference an existing local authorized full-text file")
+            elif sha256_file(full_text_path) != str(source.get("checksum", "")).casefold():
+                errors.append(f"{path}.checksum: does not match the local authorized full-text file")
         if kind == "official_journal_requirements":
             _validate_https_url(source.get("url_or_path"), f"{path}.url_or_path", errors)
             _validate_https_url(source.get("final_url"), f"{path}.final_url", errors)
+            if not _known_journal_authority(source.get("url_or_path")) or not _known_journal_authority(source.get("final_url")):
+                errors.append(
+                    f"{path}: verified journal source is outside the reviewed authority-domain registry; keep pending or add the official domain by code review"
+                )
         if "benha" in f"{source.get('title', '')} {source.get('url_or_path', '')}".casefold():
             if allowed_use != "administrative_formatting":
                 errors.append(f"{path}: Benha material may be used only as an administrative formatting overlay")
@@ -699,7 +753,10 @@ def _validate_style_and_readiness(
                 if str(sample.get("rights_basis", "")).casefold() not in STYLE_RIGHTS:
                     errors.append(f"{path}.rights_basis: style profile requires authorized full text")
                 doi = re.sub(r"^(?:https?://(?:dx\.)?doi\.org/|doi:\s*)", "", str(sample.get("doi", "")).casefold()).strip()
+                doi = doi.split("?", 1)[0].split("#", 1)[0].rstrip(".,; ")
                 source_id = str(sample.get("source_id", ""))
+                if not re.fullmatch(r"10\.\d{4,9}/\S+", doi):
+                    errors.append(f"{path}.doi: invalid DOI syntax")
                 if doi in seen_dois:
                     errors.append(f"{path}.doi: style samples must use distinct papers")
                 seen_dois.add(doi)

@@ -16,7 +16,7 @@ Store one atomic claim per row:
 | `status` | `verified`, `stale`, `conflicting`, or `pending_verification` |
 | `source_id` | Link to one `official_journal_requirements` source-ledger record with requested/final URLs and frozen-response checksum |
 
-Never copy a publisher-family rule to a journal without checking the journal page. A redirect to generic instructions is evidence only for the fields actually covered there. Treat third-party summaries and spreadsheet inheritance as discovery hints.
+Never copy a publisher-family rule to a journal without checking the journal page. A redirect to generic instructions is evidence only for the fields actually covered there. Treat third-party summaries and spreadsheet inheritance as discovery hints. The offline validator also uses a conservative reviewed authority-domain registry: an official journal hosted elsewhere remains `pending_verification` until its real publisher/society domain is added by code review. This is a safety default, not a claim that an unlisted journal is illegitimate.
 
 ## Fields to verify
 
