@@ -24,6 +24,15 @@ class ManuscriptAuditTests(unittest.TestCase):
         self.assertIn("R", profile.software_mentions)
         self.assertIn("STROBE", profile.reporting_guideline_mentions)
 
+    def test_late_references_are_excluded_from_method_markers(self):
+        body = "METHODS\nNo named software.\n" + ("Study body.\n" * 600)
+        profile = profile_text(
+            body + "\nREFERENCES\nA cited paper used SPSS and reported p = 0.01.\n"
+        )
+        self.assertTrue(profile.late_references_boundary_detected)
+        self.assertNotIn("SPSS", profile.software_mentions)
+        self.assertFalse(profile.statistical_markers["exact_or_threshold_p_value"])
+
     def test_ordinary_words_do_not_count_as_reporting_guidelines(self):
         profile = profile_text(
             "The care process used an electronic health record. Participants arrive at noon."

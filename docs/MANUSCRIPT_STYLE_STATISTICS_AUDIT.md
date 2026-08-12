@@ -35,8 +35,9 @@ For every record, the runner:
 3. resolves the PDF path and rejects traversal or symlink escape from the declared root;
 4. verifies the PDF SHA-256 against the inventory;
 5. extracts text in memory with `pdftotext -layout`;
-6. records booleans and counts for structural, reporting-guideline, software, and statistical markers; and
-7. discards the extracted text.
+6. stops the statistical/software/guideline scan at a reliable late References or Bibliography heading when one is reconstructed;
+7. records booleans and counts for structural, reporting-guideline, software, and statistical markers; and
+8. discards the extracted text.
 
 Run from the repository root:
 
@@ -59,22 +60,24 @@ These counts describe detectable text patterns only. Denominators are explicit b
 |---|---:|---:|---:|
 | Title contains a colon | 346 | 675 | 51.3% |
 | Title contains a question mark | 34 | 675 | 5.0% |
-| Title contains a recognized design label | 98 | 675 | 14.5% |
+| Title contains a recognized study/design descriptor | 146 | 675 | 21.6% |
 | Structured-abstract marker | 162 | 341 | 47.5% |
 | Exact/threshold p-value marker | 209 | 341 | 61.3% |
-| Sample-size or power marker | 151 | 341 | 44.3% |
+| Sample-size or power marker | 149 | 341 | 43.7% |
 | Confidence-interval marker | 137 | 341 | 40.2% |
-| Effect-estimate marker | 129 | 341 | 37.8% |
-| Model-diagnostic marker | 72 | 341 | 21.1% |
-| Multivariable-regression marker | 64 | 341 | 18.8% |
+| Effect-estimate marker | 128 | 341 | 37.5% |
+| Model-diagnostic marker | 71 | 341 | 20.8% |
+| Multivariable-regression marker | 63 | 341 | 18.5% |
 | Multiplicity marker | 56 | 341 | 16.4% |
 | Missing-data marker | 52 | 341 | 15.2% |
-| Multiple-imputation marker | 22 | 341 | 6.5% |
+| Multiple-imputation marker | 19 | 341 | 5.6% |
 | Sensitivity-analysis marker | 25 | 341 | 7.3% |
 
 Mean title length was 15.71 tokenized words. The corpus mixes research articles, reviews, protocols, corrections, and front matter, so these aggregate values are not journal rules or recommended targets.
 
-The most frequently detected software name was SPSS (101 documents), followed by R (24), SAS (14), Stata (12), and GraphPad Prism (10). Context-filtered reporting-guideline markers included STROBE (29), PRISMA (20), and CONSORT (17). A mention is not evidence that the article complied with the software or guideline, and a non-mention is not evidence that it did not.
+The most frequently detected software name was SPSS (101 documents), followed by R (23), SAS (13), Stata (12), and GraphPad Prism (10). Context-filtered reporting-guideline markers included STROBE (28), PRISMA (20), and CONSORT (16). A mention is not evidence that the article complied with the software or guideline, and a non-mention is not evidence that it did not.
+
+A late References/Bibliography boundary was reliably reconstructed in 158 of 341 analyzed full texts (46.3%); those marker scans stopped at the boundary. The remaining PDFs were scanned in full because the stricter parser did not identify a reliable late heading. Study/design descriptors are derived from titles only: a design term appearing in an introduction is never promoted to an article-type classification.
 
 ## Journal-level evidence status
 

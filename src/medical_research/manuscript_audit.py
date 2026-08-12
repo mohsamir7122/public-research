@@ -20,7 +20,23 @@ DESIGN_LABELS: dict[str, re.Pattern[str]] = {
     "case_series": re.compile(r"\bcase series\b", re.I),
     "diagnostic_accuracy": re.compile(r"\bdiagnostic accuracy\b", re.I),
     "study_protocol": re.compile(r"\b(?:study |trial )?protocol\b", re.I),
+    "prospective": re.compile(r"\bprospective\b", re.I),
+    "retrospective": re.compile(r"\bretrospective\b", re.I),
+    "scoping_review": re.compile(r"\bscoping review\b", re.I),
+    "narrative_review": re.compile(r"\bnarrative review\b", re.I),
+    "qualitative": re.compile(r"\bqualitative(?: study| research)?\b", re.I),
+    "registry_or_database": re.compile(r"\b(?:registry|database|administrative data)\b", re.I),
+    "biomechanical_or_preclinical": re.compile(
+        r"\b(?:biomechanical|cadaveric|finite element|animal model|in vitro|in vivo)\b", re.I
+    ),
+    "consensus_or_guideline": re.compile(
+        r"\b(?:consensus statement|clinical practice guideline)\b", re.I
+    ),
 }
+
+LATE_REFERENCES_HEADING = re.compile(
+    r"(?im)^\s*(?:\d+(?:\.\d+)*[.)]?\s*)?(?:references|bibliography)\s*(?:[:.]\s*)?$"
+)
 
 SECTION_PATTERNS: dict[str, re.Pattern[str]] = {
     "introduction": re.compile(r"(?im)^\s*(?:\d+(?:\.\d+)*\s+)?(?:introduction|background)\s*$"),
@@ -124,6 +140,8 @@ class TitleProfile:
 @dataclass(slots=True)
 class TextProfile:
     characters: int
+    marker_characters: int
+    late_references_boundary_detected: bool
     sections: dict[str, bool]
     abstract_headings: dict[str, bool]
     structured_abstract_marker: bool
@@ -147,18 +165,25 @@ def profile_title(title: str) -> TitleProfile:
 def profile_text(text: str) -> TextProfile:
     normalized = text.replace("\r\n", "\n").replace("\r", "\n")
     front = normalized[:30_000]
+    minimum_boundary = max(5_000, int(len(normalized) * 0.4))
+    late_reference_matches = [
+        match for match in LATE_REFERENCES_HEADING.finditer(normalized) if match.start() >= minimum_boundary
+    ]
+    marker_text = normalized[: late_reference_matches[0].start()] if late_reference_matches else normalized
     abstract_headings = {name: bool(pattern.search(front)) for name, pattern in ABSTRACT_HEADING_PATTERNS.items()}
     return TextProfile(
         characters=len(normalized),
+        marker_characters=len(marker_text),
+        late_references_boundary_detected=bool(late_reference_matches),
         sections={name: bool(pattern.search(normalized)) for name, pattern in SECTION_PATTERNS.items()},
         abstract_headings=abstract_headings,
         structured_abstract_marker=sum(abstract_headings.values()) >= 3,
-        statistical_markers={name: bool(pattern.search(normalized)) for name, pattern in STATISTICAL_MARKERS.items()},
-        software_mentions=tuple(name for name, pattern in SOFTWARE_PATTERNS.items() if pattern.search(normalized)),
+        statistical_markers={name: bool(pattern.search(marker_text)) for name, pattern in STATISTICAL_MARKERS.items()},
+        software_mentions=tuple(name for name, pattern in SOFTWARE_PATTERNS.items() if pattern.search(marker_text)),
         reporting_guideline_mentions=tuple(
             name
             for name, pattern in GUIDELINE_PATTERNS.items()
-            if _has_contextual_guideline_mention(normalized, pattern)
+            if _has_contextual_guideline_mention(marker_text, pattern)
         ),
     )
 

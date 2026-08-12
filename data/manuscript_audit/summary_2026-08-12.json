@@ -29,6 +29,56 @@
     "insufficient_sample_below_five": 26,
     "no_license_compatible_full_text_sample": 13
   },
+  "title_observations": {
+    "denominator": 675,
+    "word_count_mean": 15.71,
+    "colon_count": 346,
+    "question_mark_count": 34,
+    "recognized_design_label_count": 146
+  },
+  "full_text_marker_observations": {
+    "denominator": 341,
+    "late_references_boundary_count": 158,
+    "structured_abstract_marker_count": 162,
+    "statistical_marker_counts": {
+      "confidence_interval": 137,
+      "diagnostic_accuracy": 21,
+      "effect_estimate": 128,
+      "exact_or_threshold_p_value": 209,
+      "heterogeneity": 59,
+      "meta_analysis": 111,
+      "missing_data": 52,
+      "mixed_or_repeated_model": 54,
+      "model_diagnostics": 71,
+      "multiple_imputation": 19,
+      "multiplicity": 56,
+      "multivariable_regression": 63,
+      "propensity_method": 14,
+      "sample_size_or_power": 149,
+      "sensitivity_analysis": 25,
+      "survival_analysis": 20
+    },
+    "software_mention_counts": {
+      "GraphPad Prism": 10,
+      "MATLAB": 5,
+      "R": 23,
+      "RevMan": 3,
+      "SAS": 13,
+      "SPSS": 101,
+      "Stata": 12,
+      "jamovi": 6
+    },
+    "reporting_guideline_mention_counts": {
+      "ARRIVE": 3,
+      "CONSORT": 16,
+      "PRISMA": 20,
+      "RECORD": 2,
+      "SPIRIT": 2,
+      "STARD": 1,
+      "STROBE": 28,
+      "TRIPOD": 1
+    }
+  },
   "extractor": "pdftotext version 24.02.0",
   "raw_full_text_persisted": false,
   "interpretation": "Derived text-marker observations only; not official journal requirements, methodological quality judgments, reasons for acceptance, or evidence of acceptance probability."

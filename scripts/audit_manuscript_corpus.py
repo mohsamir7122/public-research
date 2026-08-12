@@ -8,6 +8,7 @@ import hashlib
 import json
 import shutil
 import subprocess
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Any
@@ -141,6 +142,18 @@ def main() -> int:
         ["pdftotext", "-v"], check=False, stdout=subprocess.PIPE, stderr=subprocess.STDOUT
     )
     extractor_version = version_result.stdout.decode("utf-8", errors="replace").splitlines()[0]
+    analyzed_profiles = [
+        profile["text_profile"] for profile in profiles if profile["full_text_status"] == "analyzed"
+    ]
+    title_word_counts = [int(profile["title_profile"]["word_count"]) for profile in profiles]
+    statistical_counts: Counter[str] = Counter()
+    software_counts: Counter[str] = Counter()
+    guideline_counts: Counter[str] = Counter()
+    for profile in analyzed_profiles:
+        for name, present in profile["statistical_markers"].items():
+            statistical_counts[name] += bool(present)
+        software_counts.update(profile["software_mentions"])
+        guideline_counts.update(profile["reporting_guideline_mentions"])
     summary = {
         "snapshot_date": args.snapshot_date,
         "source_inventory_sha256": _sha256_file(args.inventory),
@@ -151,6 +164,29 @@ def main() -> int:
         "license_counts": dict(sorted(license_counts.items())),
         "full_text_status_counts": dict(sorted(statuses.items())),
         "journal_evidence_status_counts": dict(sorted(journal_evidence_status_counts.items())),
+        "title_observations": {
+            "denominator": len(profiles),
+            "word_count_mean": round(sum(title_word_counts) / len(title_word_counts), 2) if title_word_counts else None,
+            "colon_count": sum(bool(profile["title_profile"]["has_colon"]) for profile in profiles),
+            "question_mark_count": sum(
+                bool(profile["title_profile"]["has_question_mark"]) for profile in profiles
+            ),
+            "recognized_design_label_count": sum(
+                bool(profile["title_profile"]["design_labels"]) for profile in profiles
+            ),
+        },
+        "full_text_marker_observations": {
+            "denominator": len(analyzed_profiles),
+            "late_references_boundary_count": sum(
+                bool(profile["late_references_boundary_detected"]) for profile in analyzed_profiles
+            ),
+            "structured_abstract_marker_count": sum(
+                bool(profile["structured_abstract_marker"]) for profile in analyzed_profiles
+            ),
+            "statistical_marker_counts": dict(sorted(statistical_counts.items())),
+            "software_mention_counts": dict(sorted(software_counts.items())),
+            "reporting_guideline_mention_counts": dict(sorted(guideline_counts.items())),
+        },
         "extractor": extractor_version,
         "raw_full_text_persisted": False,
         "interpretation": "Derived text-marker observations only; not official journal requirements, methodological quality judgments, reasons for acceptance, or evidence of acceptance probability.",

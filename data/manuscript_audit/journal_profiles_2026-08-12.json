@@ -13,7 +13,9 @@
       "cohort": 9,
       "cross_sectional": 1,
       "meta_analysis": 1,
+      "prospective": 1,
       "randomized_trial": 3,
+      "registry_or_database": 3,
       "systematic_review": 2
     },
     "statistical_marker_counts": {
@@ -92,7 +94,7 @@
     "statistical_marker_counts": {
       "confidence_interval": 1,
       "diagnostic_accuracy": 0,
-      "effect_estimate": 2,
+      "effect_estimate": 1,
       "exact_or_threshold_p_value": 1,
       "heterogeneity": 0,
       "meta_analysis": 0,
@@ -265,7 +267,9 @@
     "title_colon_fraction": 0.3333,
     "title_question_fraction": 0.0,
     "title_design_label_counts": {
-      "cohort": 1
+      "cohort": 1,
+      "prospective": 1,
+      "retrospective": 1
     },
     "statistical_marker_counts": {
       "confidence_interval": 2,
@@ -321,14 +325,16 @@
     "title_word_count_mean": 17.43,
     "title_colon_fraction": 0.2857,
     "title_question_fraction": 0.1429,
-    "title_design_label_counts": {},
+    "title_design_label_counts": {
+      "scoping_review": 1
+    },
     "statistical_marker_counts": {
       "confidence_interval": 2,
       "diagnostic_accuracy": 1,
       "effect_estimate": 3,
       "exact_or_threshold_p_value": 4,
       "heterogeneity": 1,
-      "meta_analysis": 3,
+      "meta_analysis": 1,
       "missing_data": 0,
       "mixed_or_repeated_model": 3,
       "model_diagnostics": 1,
@@ -383,7 +389,10 @@
     "title_question_fraction": 0.037,
     "title_design_label_counts": {
       "cohort": 1,
+      "consensus_or_guideline": 1,
       "meta_analysis": 2,
+      "prospective": 1,
+      "qualitative": 3,
       "randomized_trial": 4,
       "study_protocol": 4,
       "systematic_review": 5
@@ -455,6 +464,8 @@
     "title_colon_fraction": 0.25,
     "title_question_fraction": 0.0833,
     "title_design_label_counts": {
+      "prospective": 1,
+      "qualitative": 1,
       "randomized_trial": 1
     },
     "statistical_marker_counts": {
@@ -514,6 +525,8 @@
     "title_colon_fraction": 0.1667,
     "title_question_fraction": 0.1333,
     "title_design_label_counts": {
+      "prospective": 1,
+      "qualitative": 2,
       "randomized_trial": 1,
       "study_protocol": 1
     },
@@ -691,6 +704,7 @@
     "title_question_fraction": 0.1176,
     "title_design_label_counts": {
       "meta_analysis": 3,
+      "prospective": 1,
       "systematic_review": 3
     },
     "statistical_marker_counts": {
@@ -751,6 +765,7 @@
     "title_colon_fraction": 0.4615,
     "title_question_fraction": 0.0,
     "title_design_label_counts": {
+      "biomechanical_or_preclinical": 1,
       "cohort": 1,
       "systematic_review": 1
     },
@@ -813,7 +828,10 @@
     "title_colon_fraction": 0.5667,
     "title_question_fraction": 0.0,
     "title_design_label_counts": {
-      "randomized_trial": 1
+      "biomechanical_or_preclinical": 1,
+      "prospective": 2,
+      "randomized_trial": 1,
+      "retrospective": 4
     },
     "statistical_marker_counts": {
       "confidence_interval": 10,
@@ -821,14 +839,14 @@
       "effect_estimate": 8,
       "exact_or_threshold_p_value": 21,
       "heterogeneity": 4,
-      "meta_analysis": 11,
+      "meta_analysis": 5,
       "missing_data": 1,
       "mixed_or_repeated_model": 2,
       "model_diagnostics": 8,
       "multiple_imputation": 0,
       "multiplicity": 5,
       "multivariable_regression": 8,
-      "propensity_method": 3,
+      "propensity_method": 2,
       "sample_size_or_power": 10,
       "sensitivity_analysis": 0,
       "survival_analysis": 1
@@ -899,6 +917,7 @@
     "title_colon_fraction": 0.2105,
     "title_question_fraction": 0.0,
     "title_design_label_counts": {
+      "biomechanical_or_preclinical": 1,
       "study_protocol": 1
     },
     "statistical_marker_counts": {
@@ -963,7 +982,7 @@
       "effect_estimate": 0,
       "exact_or_threshold_p_value": 0,
       "heterogeneity": 0,
-      "meta_analysis": 1,
+      "meta_analysis": 0,
       "missing_data": 0,
       "mixed_or_repeated_model": 0,
       "model_diagnostics": 0,
@@ -1010,7 +1029,9 @@
     "title_word_count_mean": 18.0,
     "title_colon_fraction": 1.0,
     "title_question_fraction": 0.0,
-    "title_design_label_counts": {},
+    "title_design_label_counts": {
+      "narrative_review": 1
+    },
     "statistical_marker_counts": {
       "confidence_interval": 0,
       "diagnostic_accuracy": 0,
@@ -1170,14 +1191,16 @@
     "title_word_count_mean": 14.69,
     "title_colon_fraction": 0.5,
     "title_question_fraction": 0.0769,
-    "title_design_label_counts": {},
+    "title_design_label_counts": {
+      "scoping_review": 1
+    },
     "statistical_marker_counts": {
       "confidence_interval": 1,
       "diagnostic_accuracy": 0,
       "effect_estimate": 2,
       "exact_or_threshold_p_value": 3,
       "heterogeneity": 1,
-      "meta_analysis": 4,
+      "meta_analysis": 0,
       "missing_data": 2,
       "mixed_or_repeated_model": 3,
       "model_diagnostics": 2,
@@ -1185,7 +1208,7 @@
       "multiplicity": 2,
       "multivariable_regression": 0,
       "propensity_method": 0,
-      "sample_size_or_power": 3,
+      "sample_size_or_power": 2,
       "sensitivity_analysis": 0,
       "survival_analysis": 0
     },
@@ -1207,9 +1230,7 @@
       "SAS": 1,
       "SPSS": 1
     },
-    "reporting_guideline_mention_counts": {
-      "CONSORT": 1
-    },
+    "reporting_guideline_mention_counts": {},
     "document_kind_counts_all": {
       "article_or_unspecified": 24,
       "review_guideline_or_consensus": 2
@@ -1235,7 +1256,7 @@
       "effect_estimate": 0,
       "exact_or_threshold_p_value": 4,
       "heterogeneity": 1,
-      "meta_analysis": 1,
+      "meta_analysis": 0,
       "missing_data": 0,
       "mixed_or_repeated_model": 0,
       "model_diagnostics": 2,
@@ -1283,6 +1304,7 @@
     "title_colon_fraction": 0.8095,
     "title_question_fraction": 0.0952,
     "title_design_label_counts": {
+      "scoping_review": 1,
       "systematic_review": 1
     },
     "statistical_marker_counts": {
@@ -1295,7 +1317,7 @@
       "missing_data": 1,
       "mixed_or_repeated_model": 0,
       "model_diagnostics": 0,
-      "multiple_imputation": 1,
+      "multiple_imputation": 0,
       "multiplicity": 0,
       "multivariable_regression": 0,
       "propensity_method": 0,
@@ -1317,9 +1339,7 @@
       "methods": 8,
       "results": 1
     },
-    "software_mention_counts": {
-      "SAS": 1
-    },
+    "software_mention_counts": {},
     "reporting_guideline_mention_counts": {
       "PRISMA": 1
     },
@@ -1495,7 +1515,7 @@
       "model_diagnostics": 0,
       "multiple_imputation": 0,
       "multiplicity": 1,
-      "multivariable_regression": 1,
+      "multivariable_regression": 0,
       "propensity_method": 0,
       "sample_size_or_power": 2,
       "sensitivity_analysis": 0,
@@ -1542,6 +1562,7 @@
     "title_question_fraction": 0.0333,
     "title_design_label_counts": {
       "cross_sectional": 1,
+      "qualitative": 1,
       "randomized_trial": 1,
       "study_protocol": 1,
       "systematic_review": 2
@@ -1552,10 +1573,10 @@
       "effect_estimate": 17,
       "exact_or_threshold_p_value": 19,
       "heterogeneity": 6,
-      "meta_analysis": 18,
+      "meta_analysis": 5,
       "missing_data": 3,
       "mixed_or_repeated_model": 5,
-      "model_diagnostics": 12,
+      "model_diagnostics": 11,
       "multiple_imputation": 0,
       "multiplicity": 6,
       "multivariable_regression": 6,
@@ -1626,7 +1647,7 @@
       "multiplicity": 0,
       "multivariable_regression": 0,
       "propensity_method": 0,
-      "sample_size_or_power": 1,
+      "sample_size_or_power": 0,
       "sensitivity_analysis": 0,
       "survival_analysis": 0
     },
@@ -1666,6 +1687,7 @@
     "title_design_label_counts": {
       "case_report": 1,
       "meta_analysis": 2,
+      "retrospective": 1,
       "systematic_review": 2
     },
     "statistical_marker_counts": {
@@ -1750,11 +1772,13 @@
     "title_colon_fraction": 0.5333,
     "title_question_fraction": 0.0333,
     "title_design_label_counts": {
+      "biomechanical_or_preclinical": 4,
       "case_control": 1,
       "case_report": 1,
       "cross_sectional": 1,
       "diagnostic_accuracy": 1,
       "meta_analysis": 1,
+      "prospective": 1,
       "systematic_review": 1
     },
     "statistical_marker_counts": {
@@ -1763,11 +1787,11 @@
       "effect_estimate": 9,
       "exact_or_threshold_p_value": 27,
       "heterogeneity": 6,
-      "meta_analysis": 19,
+      "meta_analysis": 15,
       "missing_data": 3,
       "mixed_or_repeated_model": 2,
       "model_diagnostics": 8,
-      "multiple_imputation": 3,
+      "multiple_imputation": 2,
       "multiplicity": 7,
       "multivariable_regression": 7,
       "propensity_method": 2,
@@ -1816,7 +1840,9 @@
     "title_word_count_mean": 17.17,
     "title_colon_fraction": 0.1667,
     "title_question_fraction": 0.0,
-    "title_design_label_counts": {},
+    "title_design_label_counts": {
+      "registry_or_database": 1
+    },
     "statistical_marker_counts": {
       "confidence_interval": 3,
       "diagnostic_accuracy": 0,
@@ -1896,7 +1922,9 @@
     "title_word_count_mean": 13.0,
     "title_colon_fraction": 0.3333,
     "title_question_fraction": 0.3333,
-    "title_design_label_counts": {},
+    "title_design_label_counts": {
+      "registry_or_database": 1
+    },
     "statistical_marker_counts": {
       "confidence_interval": 0,
       "diagnostic_accuracy": 0,
@@ -1951,9 +1979,14 @@
     "title_colon_fraction": 0.6333,
     "title_question_fraction": 0.0,
     "title_design_label_counts": {
+      "biomechanical_or_preclinical": 1,
       "cohort": 2,
       "cross_sectional": 2,
-      "meta_analysis": 1
+      "meta_analysis": 1,
+      "narrative_review": 1,
+      "prospective": 1,
+      "retrospective": 1,
+      "scoping_review": 1
     },
     "statistical_marker_counts": {},
     "section_marker_counts": {},
@@ -1987,7 +2020,7 @@
       "missing_data": 0,
       "mixed_or_repeated_model": 1,
       "model_diagnostics": 1,
-      "multiple_imputation": 2,
+      "multiple_imputation": 1,
       "multiplicity": 2,
       "multivariable_regression": 1,
       "propensity_method": 0,
@@ -2050,7 +2083,8 @@
     "title_colon_fraction": 0.5,
     "title_question_fraction": 0.0,
     "title_design_label_counts": {
-      "cohort": 1
+      "cohort": 1,
+      "retrospective": 1
     },
     "statistical_marker_counts": {
       "confidence_interval": 1,
@@ -2115,7 +2149,7 @@
       "effect_estimate": 1,
       "exact_or_threshold_p_value": 1,
       "heterogeneity": 0,
-      "meta_analysis": 1,
+      "meta_analysis": 0,
       "missing_data": 0,
       "mixed_or_repeated_model": 1,
       "model_diagnostics": 0,
@@ -2218,14 +2252,16 @@
     "title_word_count_mean": 17.33,
     "title_colon_fraction": 0.6667,
     "title_question_fraction": 0.0,
-    "title_design_label_counts": {},
+    "title_design_label_counts": {
+      "retrospective": 1
+    },
     "statistical_marker_counts": {
       "confidence_interval": 1,
       "diagnostic_accuracy": 0,
       "effect_estimate": 2,
       "exact_or_threshold_p_value": 2,
       "heterogeneity": 0,
-      "meta_analysis": 2,
+      "meta_analysis": 1,
       "missing_data": 1,
       "mixed_or_repeated_model": 0,
       "model_diagnostics": 1,
@@ -2274,7 +2310,9 @@
     "title_question_fraction": 0.05,
     "title_design_label_counts": {
       "cross_sectional": 4,
-      "randomized_trial": 4
+      "prospective": 2,
+      "randomized_trial": 4,
+      "retrospective": 1
     },
     "statistical_marker_counts": {},
     "section_marker_counts": {},
@@ -2379,7 +2417,9 @@
     "title_question_fraction": 0.0769,
     "title_design_label_counts": {
       "cohort": 1,
-      "randomized_trial": 1
+      "prospective": 1,
+      "randomized_trial": 1,
+      "retrospective": 1
     },
     "statistical_marker_counts": {
       "confidence_interval": 4,
@@ -2387,7 +2427,7 @@
       "effect_estimate": 3,
       "exact_or_threshold_p_value": 5,
       "heterogeneity": 1,
-      "meta_analysis": 3,
+      "meta_analysis": 2,
       "missing_data": 0,
       "mixed_or_repeated_model": 0,
       "model_diagnostics": 1,
@@ -2442,6 +2482,8 @@
     "title_design_label_counts": {
       "cohort": 1,
       "meta_analysis": 1,
+      "prospective": 1,
+      "retrospective": 1,
       "systematic_review": 3
     },
     "statistical_marker_counts": {
@@ -2450,7 +2492,7 @@
       "effect_estimate": 4,
       "exact_or_threshold_p_value": 6,
       "heterogeneity": 2,
-      "meta_analysis": 6,
+      "meta_analysis": 4,
       "missing_data": 2,
       "mixed_or_repeated_model": 2,
       "model_diagnostics": 1,
@@ -2478,7 +2520,7 @@
     },
     "software_mention_counts": {
       "MATLAB": 1,
-      "R": 2,
+      "R": 1,
       "SAS": 1,
       "SPSS": 1
     },
@@ -2508,6 +2550,7 @@
     "title_design_label_counts": {
       "cohort": 1,
       "meta_analysis": 1,
+      "retrospective": 1,
       "systematic_review": 1
     },
     "statistical_marker_counts": {
@@ -2566,7 +2609,9 @@
     "title_word_count_mean": 15.05,
     "title_colon_fraction": 0.4091,
     "title_question_fraction": 0.0455,
-    "title_design_label_counts": {},
+    "title_design_label_counts": {
+      "registry_or_database": 1
+    },
     "statistical_marker_counts": {
       "confidence_interval": 2,
       "diagnostic_accuracy": 0,
@@ -2696,6 +2741,7 @@
     "title_colon_fraction": 1.0,
     "title_question_fraction": 0.0,
     "title_design_label_counts": {
+      "retrospective": 1,
       "systematic_review": 1
     },
     "statistical_marker_counts": {
@@ -2751,6 +2797,8 @@
     "title_colon_fraction": 0.7778,
     "title_question_fraction": 0.0,
     "title_design_label_counts": {
+      "narrative_review": 1,
+      "prospective": 1,
       "randomized_trial": 3
     },
     "statistical_marker_counts": {
@@ -2759,7 +2807,7 @@
       "effect_estimate": 3,
       "exact_or_threshold_p_value": 5,
       "heterogeneity": 2,
-      "meta_analysis": 5,
+      "meta_analysis": 3,
       "missing_data": 2,
       "mixed_or_repeated_model": 2,
       "model_diagnostics": 1,
@@ -2791,8 +2839,7 @@
     },
     "reporting_guideline_mention_counts": {
       "CONSORT": 1,
-      "PRISMA": 1,
-      "STROBE": 1
+      "PRISMA": 1
     },
     "document_kind_counts_all": {
       "article_or_unspecified": 8,
@@ -2834,14 +2881,16 @@
     "title_word_count_mean": 15.5,
     "title_colon_fraction": 0.7333,
     "title_question_fraction": 0.1,
-    "title_design_label_counts": {},
+    "title_design_label_counts": {
+      "narrative_review": 1
+    },
     "statistical_marker_counts": {
       "confidence_interval": 1,
       "diagnostic_accuracy": 0,
       "effect_estimate": 1,
       "exact_or_threshold_p_value": 1,
-      "heterogeneity": 2,
-      "meta_analysis": 4,
+      "heterogeneity": 1,
+      "meta_analysis": 0,
       "missing_data": 0,
       "mixed_or_repeated_model": 1,
       "model_diagnostics": 1,
@@ -2889,7 +2938,9 @@
     "title_word_count_mean": 22.0,
     "title_colon_fraction": 1.0,
     "title_question_fraction": 0.0,
-    "title_design_label_counts": {},
+    "title_design_label_counts": {
+      "registry_or_database": 1
+    },
     "statistical_marker_counts": {
       "confidence_interval": 1,
       "diagnostic_accuracy": 0,
@@ -2947,7 +2998,10 @@
     "title_question_fraction": 0.0,
     "title_design_label_counts": {
       "cohort": 2,
-      "diagnostic_accuracy": 1
+      "diagnostic_accuracy": 1,
+      "prospective": 1,
+      "registry_or_database": 1,
+      "retrospective": 1
     },
     "statistical_marker_counts": {
       "confidence_interval": 1,
@@ -3002,14 +3056,16 @@
     "title_word_count_mean": 15.5,
     "title_colon_fraction": 1.0,
     "title_question_fraction": 0.0,
-    "title_design_label_counts": {},
+    "title_design_label_counts": {
+      "qualitative": 1
+    },
     "statistical_marker_counts": {
       "confidence_interval": 0,
       "diagnostic_accuracy": 0,
       "effect_estimate": 0,
       "exact_or_threshold_p_value": 0,
       "heterogeneity": 0,
-      "meta_analysis": 1,
+      "meta_analysis": 0,
       "missing_data": 0,
       "mixed_or_repeated_model": 0,
       "model_diagnostics": 0,
