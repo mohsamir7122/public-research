@@ -1,0 +1,81 @@
+{
+  "inventory_date": "2026-08-12",
+  "public_repository_policy": "derived_metadata_only",
+  "raw_sources_committed": false,
+  "attachments": {
+    "visible_file_count": 16,
+    "total_bytes": 1047891462,
+    "zip_count": 11,
+    "xlsx_count": 2,
+    "doc_count": 1,
+    "json_count": 1,
+    "extensionless_text_count": 1
+  },
+  "archive_set": {
+    "expected_parts": 23,
+    "supplied_parts": 11,
+    "missing_parts": [
+      "ortho_oa_part_002.zip",
+      "ortho_oa_part_004.zip",
+      "ortho_oa_part_010.zip",
+      "ortho_oa_part_011.zip",
+      "ortho_oa_part_014.zip",
+      "ortho_oa_part_016.zip",
+      "ortho_oa_part_017.zip",
+      "ortho_oa_part_018.zip",
+      "ortho_oa_part_020.zip",
+      "ortho_oa_part_021.zip",
+      "ortho_oa_part_022.zip",
+      "ortho_oa_part_023.zip"
+    ],
+    "audited_archives": 11,
+    "crc_passed": 11,
+    "path_safety_passed": 11,
+    "archive_bomb_indicators": 0,
+    "largest_member_bytes": 17530653,
+    "maximum_observed_compression_ratio": 1.0
+  },
+  "safe_extraction": {
+    "extracted_file_count": 680,
+    "extracted_bytes": 1045656181,
+    "pdf_count": 675,
+    "pdf_bytes": 1003099284,
+    "metadata_file_count": 5,
+    "pdf_pages": 8167,
+    "pdf_parse_errors": 0,
+    "nonstandard_pdf_header_count": 1,
+    "readable_encrypted_pdf_count": 1,
+    "thesis_or_dissertation_count": 0,
+    "protocol_count": 7,
+    "review_guideline_or_consensus_count": 42,
+    "front_matter_comment_or_correction_count": 22,
+    "article_or_unspecified_count": 604
+  },
+  "coverage": {
+    "manifest_pdf_total": 1237,
+    "available_pdf_total": 675,
+    "unavailable_due_to_missing_parts": 562,
+    "available_journals": 61,
+    "global_journal_metadata_count": 152
+  },
+  "deduplication": {
+    "available_pdf_sha256_duplicate_groups": 0,
+    "available_pdf_doi_duplicate_groups": 0,
+    "available_pdf_normalized_title_groups": 6,
+    "global_metadata_records": 14972,
+    "global_metadata_unique_dois": 14482,
+    "global_metadata_duplicate_doi_groups": 455,
+    "global_metadata_duplicate_doi_extra_rows": 476,
+    "global_metadata_rows_without_doi": 14,
+    "duplicated_metadata_exports": [
+      ["results.csv", "oa_pdf_manifest.csv"],
+      ["results.jsonl", "oa_pdf_manifest.jsonl"]
+    ]
+  },
+  "source_classification": {
+    "papers_and_protocols_present": true,
+    "theses_present": false,
+    "benha_template_present_but_excluded_from_methodological_development": true,
+    "rights_for_public_redistribution": "not_established"
+  }
+}
