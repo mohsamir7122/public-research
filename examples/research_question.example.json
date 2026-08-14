@@ -1,0 +1,19 @@
+{
+  "project_id": "ACL-REMNANT-001",
+  "question": "Does remnant-preserving ACL reconstruction improve proprioception compared with standard reconstruction?",
+  "population": {
+    "terms": ["anterior cruciate ligament injury", "ACL tear"],
+    "mesh": ["Anterior Cruciate Ligament Injuries"]
+  },
+  "intervention": {
+    "terms": ["remnant preservation reconstruction", "tibial remnant preservation"]
+  },
+  "comparator": {
+    "terms": ["standard ACL reconstruction", "remnant resection"]
+  },
+  "include_comparator_in_primary_search": false,
+  "outcomes": {
+    "terms": ["proprioception", "joint position sense"]
+  },
+  "include_outcomes_in_primary_search": false
+}

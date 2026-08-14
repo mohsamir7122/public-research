@@ -1,0 +1,1 @@
+search_run_id,project_id,database,platform,search_date,time_zone,coverage_from,coverage_to,exact_query,filters,hits,export_filename,export_sha256,searcher,peer_reviewer,notes

@@ -1,0 +1,3164 @@
+[
+  {
+    "journal": "Acta Orthopaedica",
+    "title_records": 30,
+    "full_text_license_compatible_and_analyzed": 30,
+    "distinct_full_text_sources": 30,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 1.0,
+    "title_word_count_mean": 21.53,
+    "title_colon_fraction": 0.9,
+    "title_question_fraction": 0.0667,
+    "title_design_label_counts": {
+      "cohort": 9,
+      "cross_sectional": 1,
+      "meta_analysis": 1,
+      "prospective": 1,
+      "randomized_trial": 3,
+      "registry_or_database": 3,
+      "systematic_review": 2
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 22,
+      "diagnostic_accuracy": 3,
+      "effect_estimate": 14,
+      "exact_or_threshold_p_value": 13,
+      "heterogeneity": 7,
+      "meta_analysis": 14,
+      "missing_data": 12,
+      "mixed_or_repeated_model": 6,
+      "model_diagnostics": 6,
+      "multiple_imputation": 1,
+      "multiplicity": 3,
+      "multivariable_regression": 7,
+      "propensity_method": 0,
+      "sample_size_or_power": 10,
+      "sensitivity_analysis": 5,
+      "survival_analysis": 3
+    },
+    "section_marker_counts": {
+      "conclusion": 1,
+      "data_availability": 0,
+      "discussion": 3,
+      "introduction": 0,
+      "methods": 1,
+      "results": 5
+    },
+    "abstract_heading_counts": {
+      "background": 23,
+      "conclusion": 14,
+      "methods": 24,
+      "results": 23
+    },
+    "software_mention_counts": {
+      "MATLAB": 1,
+      "R": 3,
+      "SAS": 1,
+      "SPSS": 8,
+      "Stata": 3
+    },
+    "reporting_guideline_mention_counts": {
+      "CONSORT": 4,
+      "PRISMA": 2,
+      "STARD": 1,
+      "STROBE": 15,
+      "TRIPOD": 1
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 25,
+      "front_matter_comment_or_correction": 3,
+      "review_guideline_or_consensus": 2
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 25,
+      "front_matter_comment_or_correction": 3,
+      "review_guideline_or_consensus": 2
+    }
+  },
+  {
+    "journal": "Annals of Physical and Rehabilitation Medicine",
+    "title_records": 5,
+    "full_text_license_compatible_and_analyzed": 2,
+    "distinct_full_text_sources": 2,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 0.4,
+    "title_word_count_mean": 16.2,
+    "title_colon_fraction": 1.0,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "case_report": 1,
+      "cohort": 1,
+      "meta_analysis": 1,
+      "systematic_review": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 1,
+      "exact_or_threshold_p_value": 1,
+      "heterogeneity": 0,
+      "meta_analysis": 0,
+      "missing_data": 1,
+      "mixed_or_repeated_model": 1,
+      "model_diagnostics": 0,
+      "multiple_imputation": 1,
+      "multiplicity": 0,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 1,
+      "sensitivity_analysis": 1,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 1,
+      "data_availability": 0,
+      "discussion": 1,
+      "introduction": 0,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 1,
+      "conclusion": 2,
+      "methods": 1,
+      "results": 1
+    },
+    "software_mention_counts": {
+      "R": 1,
+      "SAS": 2
+    },
+    "reporting_guideline_mention_counts": {
+      "STROBE": 1
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 4,
+      "review_guideline_or_consensus": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 2
+    }
+  },
+  {
+    "journal": "Archives of Orthopaedic and Trauma Surgery",
+    "title_records": 2,
+    "full_text_license_compatible_and_analyzed": 2,
+    "distinct_full_text_sources": 2,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 1.0,
+    "title_word_count_mean": 15.5,
+    "title_colon_fraction": 0.0,
+    "title_question_fraction": 1.0,
+    "title_design_label_counts": {
+      "meta_analysis": 1,
+      "systematic_review": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 2,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 1,
+      "exact_or_threshold_p_value": 2,
+      "heterogeneity": 0,
+      "meta_analysis": 2,
+      "missing_data": 2,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 1,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 1,
+      "propensity_method": 0,
+      "sample_size_or_power": 1,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 1
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 1,
+      "methods": 0,
+      "results": 1
+    },
+    "abstract_heading_counts": {
+      "background": 2,
+      "conclusion": 2,
+      "methods": 2,
+      "results": 2
+    },
+    "software_mention_counts": {
+      "RevMan": 1,
+      "SPSS": 1
+    },
+    "reporting_guideline_mention_counts": {
+      "PRISMA": 1
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 1,
+      "review_guideline_or_consensus": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 1,
+      "review_guideline_or_consensus": 1
+    }
+  },
+  {
+    "journal": "Archives of Osteoporosis",
+    "title_records": 5,
+    "full_text_license_compatible_and_analyzed": 3,
+    "distinct_full_text_sources": 3,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 0.6,
+    "title_word_count_mean": 19.8,
+    "title_colon_fraction": 0.2,
+    "title_question_fraction": 0.2,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {
+      "confidence_interval": 2,
+      "diagnostic_accuracy": 2,
+      "effect_estimate": 2,
+      "exact_or_threshold_p_value": 2,
+      "heterogeneity": 0,
+      "meta_analysis": 2,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 1,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 0,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 0,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 2,
+      "conclusion": 1,
+      "methods": 2,
+      "results": 2
+    },
+    "software_mention_counts": {
+      "SPSS": 1
+    },
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 4,
+      "front_matter_comment_or_correction": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 2,
+      "front_matter_comment_or_correction": 1
+    }
+  },
+  {
+    "journal": "Arthroplasty Today",
+    "title_records": 9,
+    "full_text_license_compatible_and_analyzed": 3,
+    "distinct_full_text_sources": 3,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 0.3333,
+    "title_word_count_mean": 16.0,
+    "title_colon_fraction": 0.3333,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "cohort": 1,
+      "prospective": 1,
+      "retrospective": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 2,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 1,
+      "exact_or_threshold_p_value": 2,
+      "heterogeneity": 1,
+      "meta_analysis": 3,
+      "missing_data": 1,
+      "mixed_or_repeated_model": 1,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 1,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 3,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 1,
+      "data_availability": 0,
+      "discussion": 2,
+      "introduction": 2,
+      "methods": 0,
+      "results": 1
+    },
+    "abstract_heading_counts": {
+      "background": 3,
+      "conclusion": 3,
+      "methods": 3,
+      "results": 2
+    },
+    "software_mention_counts": {
+      "SPSS": 1,
+      "jamovi": 1
+    },
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 9
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 3
+    }
+  },
+  {
+    "journal": "Biology of Sport",
+    "title_records": 7,
+    "full_text_license_compatible_and_analyzed": 5,
+    "distinct_full_text_sources": 5,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 0.7143,
+    "title_word_count_mean": 17.43,
+    "title_colon_fraction": 0.2857,
+    "title_question_fraction": 0.1429,
+    "title_design_label_counts": {
+      "scoping_review": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 2,
+      "diagnostic_accuracy": 1,
+      "effect_estimate": 3,
+      "exact_or_threshold_p_value": 4,
+      "heterogeneity": 1,
+      "meta_analysis": 1,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 3,
+      "model_diagnostics": 1,
+      "multiple_imputation": 0,
+      "multiplicity": 1,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 2,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 5,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 5,
+      "conclusion": 0,
+      "methods": 1,
+      "results": 2
+    },
+    "software_mention_counts": {
+      "GraphPad Prism": 1,
+      "SPSS": 1,
+      "jamovi": 1
+    },
+    "reporting_guideline_mention_counts": {
+      "PRISMA": 1
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 6,
+      "review_guideline_or_consensus": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 4,
+      "review_guideline_or_consensus": 1
+    }
+  },
+  {
+    "journal": "BMJ Open Sport & Exercise Medicine",
+    "title_records": 27,
+    "full_text_license_compatible_and_analyzed": 27,
+    "distinct_full_text_sources": 27,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 1.0,
+    "title_word_count_mean": 18.0,
+    "title_colon_fraction": 0.8148,
+    "title_question_fraction": 0.037,
+    "title_design_label_counts": {
+      "cohort": 1,
+      "consensus_or_guideline": 1,
+      "meta_analysis": 2,
+      "prospective": 1,
+      "qualitative": 3,
+      "randomized_trial": 4,
+      "study_protocol": 4,
+      "systematic_review": 5
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 8,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 9,
+      "exact_or_threshold_p_value": 11,
+      "heterogeneity": 4,
+      "meta_analysis": 1,
+      "missing_data": 3,
+      "mixed_or_repeated_model": 5,
+      "model_diagnostics": 4,
+      "multiple_imputation": 2,
+      "multiplicity": 3,
+      "multivariable_regression": 4,
+      "propensity_method": 0,
+      "sample_size_or_power": 16,
+      "sensitivity_analysis": 5,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 2,
+      "data_availability": 0,
+      "discussion": 2,
+      "introduction": 2,
+      "methods": 3,
+      "results": 3
+    },
+    "abstract_heading_counts": {
+      "background": 13,
+      "conclusion": 9,
+      "methods": 16,
+      "results": 17
+    },
+    "software_mention_counts": {
+      "MATLAB": 1,
+      "R": 3,
+      "RevMan": 1,
+      "SPSS": 7,
+      "Stata": 3
+    },
+    "reporting_guideline_mention_counts": {
+      "CONSORT": 2,
+      "PRISMA": 6,
+      "SPIRIT": 2,
+      "STROBE": 3
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 17,
+      "protocol": 4,
+      "review_guideline_or_consensus": 6
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 17,
+      "protocol": 4,
+      "review_guideline_or_consensus": 6
+    }
+  },
+  {
+    "journal": "Bone & Joint Journal",
+    "title_records": 12,
+    "full_text_license_compatible_and_analyzed": 6,
+    "distinct_full_text_sources": 6,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 0.5,
+    "title_word_count_mean": 15.33,
+    "title_colon_fraction": 0.25,
+    "title_question_fraction": 0.0833,
+    "title_design_label_counts": {
+      "prospective": 1,
+      "qualitative": 1,
+      "randomized_trial": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 4,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 1,
+      "exact_or_threshold_p_value": 2,
+      "heterogeneity": 1,
+      "meta_analysis": 2,
+      "missing_data": 2,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 2,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 2,
+      "propensity_method": 1,
+      "sample_size_or_power": 3,
+      "sensitivity_analysis": 1,
+      "survival_analysis": 1
+    },
+    "section_marker_counts": {
+      "conclusion": 6,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 0,
+      "methods": 4,
+      "results": 6
+    },
+    "abstract_heading_counts": {
+      "background": 6,
+      "conclusion": 6,
+      "methods": 6,
+      "results": 5
+    },
+    "software_mention_counts": {
+      "R": 1,
+      "Stata": 2
+    },
+    "reporting_guideline_mention_counts": {
+      "PRISMA": 1
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 12
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 6
+    }
+  },
+  {
+    "journal": "Bone & Joint Open",
+    "title_records": 30,
+    "full_text_license_compatible_and_analyzed": 12,
+    "distinct_full_text_sources": 12,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 0.4,
+    "title_word_count_mean": 14.17,
+    "title_colon_fraction": 0.1667,
+    "title_question_fraction": 0.1333,
+    "title_design_label_counts": {
+      "prospective": 1,
+      "qualitative": 2,
+      "randomized_trial": 1,
+      "study_protocol": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 9,
+      "diagnostic_accuracy": 1,
+      "effect_estimate": 7,
+      "exact_or_threshold_p_value": 8,
+      "heterogeneity": 3,
+      "meta_analysis": 8,
+      "missing_data": 7,
+      "mixed_or_repeated_model": 2,
+      "model_diagnostics": 6,
+      "multiple_imputation": 2,
+      "multiplicity": 1,
+      "multivariable_regression": 8,
+      "propensity_method": 3,
+      "sample_size_or_power": 5,
+      "sensitivity_analysis": 3,
+      "survival_analysis": 4
+    },
+    "section_marker_counts": {
+      "conclusion": 11,
+      "data_availability": 0,
+      "discussion": 2,
+      "introduction": 2,
+      "methods": 9,
+      "results": 11
+    },
+    "abstract_heading_counts": {
+      "background": 12,
+      "conclusion": 11,
+      "methods": 10,
+      "results": 11
+    },
+    "software_mention_counts": {
+      "R": 2,
+      "SAS": 2,
+      "SPSS": 1,
+      "Stata": 1
+    },
+    "reporting_guideline_mention_counts": {
+      "CONSORT": 1,
+      "PRISMA": 1,
+      "RECORD": 1,
+      "STROBE": 3
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 29,
+      "protocol": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 12
+    }
+  },
+  {
+    "journal": "Bone and Joint Research",
+    "title_records": 14,
+    "full_text_license_compatible_and_analyzed": 3,
+    "distinct_full_text_sources": 3,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 0.2143,
+    "title_word_count_mean": 12.36,
+    "title_colon_fraction": 0.0,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {
+      "confidence_interval": 2,
+      "diagnostic_accuracy": 1,
+      "effect_estimate": 2,
+      "exact_or_threshold_p_value": 3,
+      "heterogeneity": 1,
+      "meta_analysis": 1,
+      "missing_data": 1,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 2,
+      "multiple_imputation": 1,
+      "multiplicity": 2,
+      "multivariable_regression": 2,
+      "propensity_method": 0,
+      "sample_size_or_power": 1,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 1
+    },
+    "section_marker_counts": {
+      "conclusion": 3,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 0,
+      "methods": 2,
+      "results": 3
+    },
+    "abstract_heading_counts": {
+      "background": 3,
+      "conclusion": 3,
+      "methods": 3,
+      "results": 3
+    },
+    "software_mention_counts": {
+      "GraphPad Prism": 1,
+      "R": 1,
+      "SPSS": 1
+    },
+    "reporting_guideline_mention_counts": {
+      "STROBE": 1
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 14
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 3
+    }
+  },
+  {
+    "journal": "Bone Reports",
+    "title_records": 6,
+    "full_text_license_compatible_and_analyzed": 1,
+    "distinct_full_text_sources": 1,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 0.1667,
+    "title_word_count_mean": 16.67,
+    "title_colon_fraction": 0.5,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {
+      "confidence_interval": 0,
+      "diagnostic_accuracy": 1,
+      "effect_estimate": 1,
+      "exact_or_threshold_p_value": 1,
+      "heterogeneity": 1,
+      "meta_analysis": 1,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 0,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 0,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 0,
+      "conclusion": 0,
+      "methods": 1,
+      "results": 0
+    },
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 6
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 1
+    }
+  },
+  {
+    "journal": "British Journal of Sports Medicine",
+    "title_records": 17,
+    "full_text_license_compatible_and_analyzed": 4,
+    "distinct_full_text_sources": 4,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 0.2353,
+    "title_word_count_mean": 16.18,
+    "title_colon_fraction": 0.7059,
+    "title_question_fraction": 0.1176,
+    "title_design_label_counts": {
+      "meta_analysis": 3,
+      "prospective": 1,
+      "systematic_review": 3
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 3,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 2,
+      "exact_or_threshold_p_value": 2,
+      "heterogeneity": 1,
+      "meta_analysis": 0,
+      "missing_data": 1,
+      "mixed_or_repeated_model": 1,
+      "model_diagnostics": 1,
+      "multiple_imputation": 0,
+      "multiplicity": 1,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 2,
+      "sensitivity_analysis": 1,
+      "survival_analysis": 1
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 1,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 2,
+      "conclusion": 2,
+      "methods": 2,
+      "results": 2
+    },
+    "software_mention_counts": {
+      "GraphPad Prism": 1,
+      "jamovi": 1
+    },
+    "reporting_guideline_mention_counts": {
+      "STROBE": 1
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 13,
+      "review_guideline_or_consensus": 4
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 4
+    }
+  },
+  {
+    "journal": "Calcified Tissue International",
+    "title_records": 13,
+    "full_text_license_compatible_and_analyzed": 4,
+    "distinct_full_text_sources": 4,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 0.3077,
+    "title_word_count_mean": 14.77,
+    "title_colon_fraction": 0.4615,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "biomechanical_or_preclinical": 1,
+      "cohort": 1,
+      "systematic_review": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 2,
+      "diagnostic_accuracy": 1,
+      "effect_estimate": 1,
+      "exact_or_threshold_p_value": 4,
+      "heterogeneity": 1,
+      "meta_analysis": 3,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 2,
+      "multiplicity": 0,
+      "multivariable_regression": 1,
+      "propensity_method": 0,
+      "sample_size_or_power": 1,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 1,
+      "introduction": 1,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 4,
+      "conclusion": 0,
+      "methods": 1,
+      "results": 3
+    },
+    "software_mention_counts": {
+      "GraphPad Prism": 1,
+      "SPSS": 1,
+      "Stata": 1
+    },
+    "reporting_guideline_mention_counts": {
+      "ARRIVE": 1
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 12,
+      "review_guideline_or_consensus": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 4
+    }
+  },
+  {
+    "journal": "Clinics in Orthopedic Surgery",
+    "title_records": 30,
+    "full_text_license_compatible_and_analyzed": 30,
+    "distinct_full_text_sources": 30,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 1.0,
+    "title_word_count_mean": 17.23,
+    "title_colon_fraction": 0.5667,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "biomechanical_or_preclinical": 1,
+      "prospective": 2,
+      "randomized_trial": 1,
+      "retrospective": 4
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 10,
+      "diagnostic_accuracy": 1,
+      "effect_estimate": 8,
+      "exact_or_threshold_p_value": 21,
+      "heterogeneity": 4,
+      "meta_analysis": 5,
+      "missing_data": 1,
+      "mixed_or_repeated_model": 2,
+      "model_diagnostics": 8,
+      "multiple_imputation": 0,
+      "multiplicity": 5,
+      "multivariable_regression": 8,
+      "propensity_method": 2,
+      "sample_size_or_power": 10,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 1
+    },
+    "section_marker_counts": {
+      "conclusion": 2,
+      "data_availability": 0,
+      "discussion": 9,
+      "introduction": 0,
+      "methods": 8,
+      "results": 13
+    },
+    "abstract_heading_counts": {
+      "background": 23,
+      "conclusion": 23,
+      "methods": 24,
+      "results": 23
+    },
+    "software_mention_counts": {
+      "GraphPad Prism": 1,
+      "R": 2,
+      "SAS": 2,
+      "SPSS": 15
+    },
+    "reporting_guideline_mention_counts": {
+      "CONSORT": 2
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 28,
+      "front_matter_comment_or_correction": 1,
+      "review_guideline_or_consensus": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 28,
+      "front_matter_comment_or_correction": 1,
+      "review_guideline_or_consensus": 1
+    }
+  },
+  {
+    "journal": "Clinics in Sports Medicine",
+    "title_records": 17,
+    "full_text_license_compatible_and_analyzed": 0,
+    "distinct_full_text_sources": 0,
+    "style_evidence_status": "no_license_compatible_full_text_sample",
+    "full_text_coverage_fraction": 0.0,
+    "title_word_count_mean": 4.82,
+    "title_colon_fraction": 0.1765,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {},
+    "section_marker_counts": {},
+    "abstract_heading_counts": {},
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 17
+    },
+    "document_kind_counts_full_text": {}
+  },
+  {
+    "journal": "Connective Tissue Research",
+    "title_records": 19,
+    "full_text_license_compatible_and_analyzed": 10,
+    "distinct_full_text_sources": 10,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 0.5263,
+    "title_word_count_mean": 13.26,
+    "title_colon_fraction": 0.2105,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "biomechanical_or_preclinical": 1,
+      "study_protocol": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 0,
+      "diagnostic_accuracy": 1,
+      "effect_estimate": 0,
+      "exact_or_threshold_p_value": 3,
+      "heterogeneity": 4,
+      "meta_analysis": 6,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 5,
+      "multiplicity": 3,
+      "multivariable_regression": 1,
+      "propensity_method": 1,
+      "sample_size_or_power": 2,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 4,
+      "data_availability": 0,
+      "discussion": 1,
+      "introduction": 2,
+      "methods": 1,
+      "results": 1
+    },
+    "abstract_heading_counts": {
+      "background": 9,
+      "conclusion": 4,
+      "methods": 2,
+      "results": 4
+    },
+    "software_mention_counts": {
+      "GraphPad Prism": 1
+    },
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 17,
+      "front_matter_comment_or_correction": 1,
+      "protocol": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 10
+    }
+  },
+  {
+    "journal": "Curriculum Studies in Health and Physical Education",
+    "title_records": 24,
+    "full_text_license_compatible_and_analyzed": 6,
+    "distinct_full_text_sources": 6,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 0.25,
+    "title_word_count_mean": 12.96,
+    "title_colon_fraction": 0.4167,
+    "title_question_fraction": 0.125,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {
+      "confidence_interval": 0,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 0,
+      "exact_or_threshold_p_value": 0,
+      "heterogeneity": 0,
+      "meta_analysis": 0,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 0,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 4,
+      "data_availability": 0,
+      "discussion": 4,
+      "introduction": 6,
+      "methods": 1,
+      "results": 2
+    },
+    "abstract_heading_counts": {
+      "background": 6,
+      "conclusion": 0,
+      "methods": 2,
+      "results": 2
+    },
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 21,
+      "front_matter_comment_or_correction": 2,
+      "review_guideline_or_consensus": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 6
+    }
+  },
+  {
+    "journal": "EFORT Open Reviews",
+    "title_records": 1,
+    "full_text_license_compatible_and_analyzed": 1,
+    "distinct_full_text_sources": 1,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 1.0,
+    "title_word_count_mean": 18.0,
+    "title_colon_fraction": 1.0,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "narrative_review": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 0,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 0,
+      "exact_or_threshold_p_value": 0,
+      "heterogeneity": 0,
+      "meta_analysis": 1,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 1,
+      "propensity_method": 1,
+      "sample_size_or_power": 0,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 1,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 1,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 1,
+      "conclusion": 0,
+      "methods": 0,
+      "results": 0
+    },
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "review_guideline_or_consensus": 1
+    },
+    "document_kind_counts_full_text": {
+      "review_guideline_or_consensus": 1
+    }
+  },
+  {
+    "journal": "European Journal of Sport Science",
+    "title_records": 5,
+    "full_text_license_compatible_and_analyzed": 1,
+    "distinct_full_text_sources": 1,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 0.2,
+    "title_word_count_mean": 18.0,
+    "title_colon_fraction": 0.4,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 0,
+      "exact_or_threshold_p_value": 1,
+      "heterogeneity": 0,
+      "meta_analysis": 0,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 1,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 1,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 0,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 0,
+      "conclusion": 0,
+      "methods": 0,
+      "results": 0
+    },
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {
+      "STROBE": 1
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 5
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 1
+    }
+  },
+  {
+    "journal": "European Journal of Trauma and Emergency Surgery",
+    "title_records": 2,
+    "full_text_license_compatible_and_analyzed": 2,
+    "distinct_full_text_sources": 2,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 1.0,
+    "title_word_count_mean": 17.5,
+    "title_colon_fraction": 0.0,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 1,
+      "effect_estimate": 0,
+      "exact_or_threshold_p_value": 1,
+      "heterogeneity": 0,
+      "meta_analysis": 0,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 1,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 0,
+      "methods": 1,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 2,
+      "conclusion": 2,
+      "methods": 2,
+      "results": 2
+    },
+    "software_mention_counts": {
+      "SPSS": 1
+    },
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 2
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 2
+    }
+  },
+  {
+    "journal": "European Physical Education Review",
+    "title_records": 26,
+    "full_text_license_compatible_and_analyzed": 9,
+    "distinct_full_text_sources": 9,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 0.3462,
+    "title_word_count_mean": 14.69,
+    "title_colon_fraction": 0.5,
+    "title_question_fraction": 0.0769,
+    "title_design_label_counts": {
+      "scoping_review": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 2,
+      "exact_or_threshold_p_value": 3,
+      "heterogeneity": 1,
+      "meta_analysis": 0,
+      "missing_data": 2,
+      "mixed_or_repeated_model": 3,
+      "model_diagnostics": 2,
+      "multiple_imputation": 0,
+      "multiplicity": 2,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 2,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 8,
+      "data_availability": 1,
+      "discussion": 6,
+      "introduction": 9,
+      "methods": 5,
+      "results": 4
+    },
+    "abstract_heading_counts": {
+      "background": 9,
+      "conclusion": 0,
+      "methods": 5,
+      "results": 5
+    },
+    "software_mention_counts": {
+      "SAS": 1,
+      "SPSS": 1
+    },
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 24,
+      "review_guideline_or_consensus": 2
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 9
+    }
+  },
+  {
+    "journal": "European Spine Journal",
+    "title_records": 4,
+    "full_text_license_compatible_and_analyzed": 4,
+    "distinct_full_text_sources": 4,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 1.0,
+    "title_word_count_mean": 14.75,
+    "title_colon_fraction": 0.25,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 1,
+      "effect_estimate": 0,
+      "exact_or_threshold_p_value": 4,
+      "heterogeneity": 1,
+      "meta_analysis": 0,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 2,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 1,
+      "propensity_method": 0,
+      "sample_size_or_power": 2,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 1
+    },
+    "section_marker_counts": {
+      "conclusion": 4,
+      "data_availability": 0,
+      "discussion": 4,
+      "introduction": 4,
+      "methods": 4,
+      "results": 4
+    },
+    "abstract_heading_counts": {
+      "background": 3,
+      "conclusion": 3,
+      "methods": 2,
+      "results": 3
+    },
+    "software_mention_counts": {
+      "SPSS": 2
+    },
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 4
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 4
+    }
+  },
+  {
+    "journal": "Evidence & Policy",
+    "title_records": 21,
+    "full_text_license_compatible_and_analyzed": 10,
+    "distinct_full_text_sources": 10,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 0.4762,
+    "title_word_count_mean": 13.62,
+    "title_colon_fraction": 0.8095,
+    "title_question_fraction": 0.0952,
+    "title_design_label_counts": {
+      "scoping_review": 1,
+      "systematic_review": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 0,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 0,
+      "exact_or_threshold_p_value": 1,
+      "heterogeneity": 0,
+      "meta_analysis": 0,
+      "missing_data": 1,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 0,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 5,
+      "data_availability": 1,
+      "discussion": 4,
+      "introduction": 9,
+      "methods": 5,
+      "results": 2
+    },
+    "abstract_heading_counts": {
+      "background": 9,
+      "conclusion": 1,
+      "methods": 8,
+      "results": 1
+    },
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {
+      "PRISMA": 1
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 19,
+      "review_guideline_or_consensus": 2
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 9,
+      "review_guideline_or_consensus": 1
+    }
+  },
+  {
+    "journal": "Exercise and Sport Sciences Reviews",
+    "title_records": 1,
+    "full_text_license_compatible_and_analyzed": 0,
+    "distinct_full_text_sources": 0,
+    "style_evidence_status": "no_license_compatible_full_text_sample",
+    "full_text_coverage_fraction": 0.0,
+    "title_word_count_mean": 10.0,
+    "title_colon_fraction": 1.0,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {},
+    "section_marker_counts": {},
+    "abstract_heading_counts": {},
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 1
+    },
+    "document_kind_counts_full_text": {}
+  },
+  {
+    "journal": "Foot & Ankle Specialist",
+    "title_records": 3,
+    "full_text_license_compatible_and_analyzed": 0,
+    "distinct_full_text_sources": 0,
+    "style_evidence_status": "no_license_compatible_full_text_sample",
+    "full_text_coverage_fraction": 0.0,
+    "title_word_count_mean": 14.67,
+    "title_colon_fraction": 0.3333,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "diagnostic_accuracy": 1
+    },
+    "statistical_marker_counts": {},
+    "section_marker_counts": {},
+    "abstract_heading_counts": {},
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 3
+    },
+    "document_kind_counts_full_text": {}
+  },
+  {
+    "journal": "Foot and Ankle Clinics",
+    "title_records": 1,
+    "full_text_license_compatible_and_analyzed": 0,
+    "distinct_full_text_sources": 0,
+    "style_evidence_status": "no_license_compatible_full_text_sample",
+    "full_text_coverage_fraction": 0.0,
+    "title_word_count_mean": 2.0,
+    "title_colon_fraction": 0.0,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {},
+    "section_marker_counts": {},
+    "abstract_heading_counts": {},
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 1
+    },
+    "document_kind_counts_full_text": {}
+  },
+  {
+    "journal": "Foot and Ankle International",
+    "title_records": 1,
+    "full_text_license_compatible_and_analyzed": 0,
+    "distinct_full_text_sources": 0,
+    "style_evidence_status": "no_license_compatible_full_text_sample",
+    "full_text_coverage_fraction": 0.0,
+    "title_word_count_mean": 21.0,
+    "title_colon_fraction": 1.0,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {},
+    "section_marker_counts": {},
+    "abstract_heading_counts": {},
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 1
+    },
+    "document_kind_counts_full_text": {}
+  },
+  {
+    "journal": "Foot and Ankle Surgery",
+    "title_records": 1,
+    "full_text_license_compatible_and_analyzed": 1,
+    "distinct_full_text_sources": 1,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 1.0,
+    "title_word_count_mean": 17.0,
+    "title_colon_fraction": 1.0,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {
+      "confidence_interval": 0,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 0,
+      "exact_or_threshold_p_value": 0,
+      "heterogeneity": 0,
+      "meta_analysis": 0,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 0,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 0,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 1,
+      "conclusion": 1,
+      "methods": 1,
+      "results": 1
+    },
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 1
+    }
+  },
+  {
+    "journal": "Footwear Science",
+    "title_records": 30,
+    "full_text_license_compatible_and_analyzed": 16,
+    "distinct_full_text_sources": 16,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 0.5333,
+    "title_word_count_mean": 13.67,
+    "title_colon_fraction": 0.1333,
+    "title_question_fraction": 0.0333,
+    "title_design_label_counts": {
+      "randomized_trial": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 2,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 2,
+      "exact_or_threshold_p_value": 12,
+      "heterogeneity": 1,
+      "meta_analysis": 2,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 5,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 1,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 2,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 1,
+      "methods": 4,
+      "results": 3
+    },
+    "abstract_heading_counts": {
+      "background": 16,
+      "conclusion": 0,
+      "methods": 14,
+      "results": 4
+    },
+    "software_mention_counts": {
+      "SPSS": 2,
+      "jamovi": 1
+    },
+    "reporting_guideline_mention_counts": {
+      "CONSORT": 1
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 29,
+      "front_matter_comment_or_correction": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 16
+    }
+  },
+  {
+    "journal": "Frontiers in Sports and Active Living",
+    "title_records": 30,
+    "full_text_license_compatible_and_analyzed": 30,
+    "distinct_full_text_sources": 30,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 1.0,
+    "title_word_count_mean": 16.33,
+    "title_colon_fraction": 0.6,
+    "title_question_fraction": 0.0333,
+    "title_design_label_counts": {
+      "cross_sectional": 1,
+      "qualitative": 1,
+      "randomized_trial": 1,
+      "study_protocol": 1,
+      "systematic_review": 2
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 12,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 17,
+      "exact_or_threshold_p_value": 19,
+      "heterogeneity": 6,
+      "meta_analysis": 5,
+      "missing_data": 3,
+      "mixed_or_repeated_model": 5,
+      "model_diagnostics": 11,
+      "multiple_imputation": 0,
+      "multiplicity": 6,
+      "multivariable_regression": 6,
+      "propensity_method": 0,
+      "sample_size_or_power": 17,
+      "sensitivity_analysis": 2,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 6,
+      "data_availability": 0,
+      "discussion": 2,
+      "introduction": 10,
+      "methods": 3,
+      "results": 4
+    },
+    "abstract_heading_counts": {
+      "background": 11,
+      "conclusion": 7,
+      "methods": 2,
+      "results": 8
+    },
+    "software_mention_counts": {
+      "GraphPad Prism": 2,
+      "MATLAB": 2,
+      "R": 1,
+      "SPSS": 9
+    },
+    "reporting_guideline_mention_counts": {
+      "CONSORT": 1,
+      "PRISMA": 2
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 25,
+      "front_matter_comment_or_correction": 2,
+      "protocol": 1,
+      "review_guideline_or_consensus": 2
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 25,
+      "front_matter_comment_or_correction": 2,
+      "protocol": 1,
+      "review_guideline_or_consensus": 2
+    }
+  },
+  {
+    "journal": "Gait and Posture",
+    "title_records": 1,
+    "full_text_license_compatible_and_analyzed": 1,
+    "distinct_full_text_sources": 1,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 1.0,
+    "title_word_count_mean": 10.0,
+    "title_colon_fraction": 0.0,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {
+      "confidence_interval": 0,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 1,
+      "exact_or_threshold_p_value": 1,
+      "heterogeneity": 0,
+      "meta_analysis": 0,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 0,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 0,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 1,
+      "conclusion": 0,
+      "methods": 1,
+      "results": 1
+    },
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 1
+    }
+  },
+  {
+    "journal": "Hip and Pelvis",
+    "title_records": 17,
+    "full_text_license_compatible_and_analyzed": 16,
+    "distinct_full_text_sources": 16,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 0.9412,
+    "title_word_count_mean": 16.88,
+    "title_colon_fraction": 0.4706,
+    "title_question_fraction": 0.0588,
+    "title_design_label_counts": {
+      "case_report": 1,
+      "meta_analysis": 2,
+      "retrospective": 1,
+      "systematic_review": 2
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 7,
+      "diagnostic_accuracy": 1,
+      "effect_estimate": 6,
+      "exact_or_threshold_p_value": 14,
+      "heterogeneity": 4,
+      "meta_analysis": 11,
+      "missing_data": 3,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 1,
+      "multiple_imputation": 0,
+      "multiplicity": 2,
+      "multivariable_regression": 4,
+      "propensity_method": 1,
+      "sample_size_or_power": 6,
+      "sensitivity_analysis": 1,
+      "survival_analysis": 1
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 2,
+      "introduction": 0,
+      "methods": 2,
+      "results": 2
+    },
+    "abstract_heading_counts": {
+      "background": 15,
+      "conclusion": 12,
+      "methods": 3,
+      "results": 14
+    },
+    "software_mention_counts": {
+      "SPSS": 9,
+      "jamovi": 1
+    },
+    "reporting_guideline_mention_counts": {
+      "PRISMA": 3
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 13,
+      "review_guideline_or_consensus": 4
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 12,
+      "review_guideline_or_consensus": 4
+    }
+  },
+  {
+    "journal": "HIP International",
+    "title_records": 2,
+    "full_text_license_compatible_and_analyzed": 0,
+    "distinct_full_text_sources": 0,
+    "style_evidence_status": "no_license_compatible_full_text_sample",
+    "full_text_coverage_fraction": 0.0,
+    "title_word_count_mean": 25.5,
+    "title_colon_fraction": 1.0,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "case_control": 1
+    },
+    "statistical_marker_counts": {},
+    "section_marker_counts": {},
+    "abstract_heading_counts": {},
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 2
+    },
+    "document_kind_counts_full_text": {}
+  },
+  {
+    "journal": "Joint Diseases and Related Surgery",
+    "title_records": 30,
+    "full_text_license_compatible_and_analyzed": 30,
+    "distinct_full_text_sources": 30,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 1.0,
+    "title_word_count_mean": 16.5,
+    "title_colon_fraction": 0.5333,
+    "title_question_fraction": 0.0333,
+    "title_design_label_counts": {
+      "biomechanical_or_preclinical": 4,
+      "case_control": 1,
+      "case_report": 1,
+      "cross_sectional": 1,
+      "diagnostic_accuracy": 1,
+      "meta_analysis": 1,
+      "prospective": 1,
+      "systematic_review": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 8,
+      "diagnostic_accuracy": 2,
+      "effect_estimate": 9,
+      "exact_or_threshold_p_value": 27,
+      "heterogeneity": 6,
+      "meta_analysis": 15,
+      "missing_data": 3,
+      "mixed_or_repeated_model": 2,
+      "model_diagnostics": 8,
+      "multiple_imputation": 2,
+      "multiplicity": 7,
+      "multivariable_regression": 7,
+      "propensity_method": 2,
+      "sample_size_or_power": 21,
+      "sensitivity_analysis": 1,
+      "survival_analysis": 1
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 8,
+      "introduction": 0,
+      "methods": 7,
+      "results": 14
+    },
+    "abstract_heading_counts": {
+      "background": 0,
+      "conclusion": 11,
+      "methods": 1,
+      "results": 23
+    },
+    "software_mention_counts": {
+      "GraphPad Prism": 1,
+      "RevMan": 1,
+      "SPSS": 25
+    },
+    "reporting_guideline_mention_counts": {
+      "ARRIVE": 2
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 29,
+      "review_guideline_or_consensus": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 29,
+      "review_guideline_or_consensus": 1
+    }
+  },
+  {
+    "journal": "Journal of Arthroplasty",
+    "title_records": 6,
+    "full_text_license_compatible_and_analyzed": 5,
+    "distinct_full_text_sources": 5,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 0.8333,
+    "title_word_count_mean": 17.17,
+    "title_colon_fraction": 0.1667,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "registry_or_database": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 3,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 3,
+      "exact_or_threshold_p_value": 3,
+      "heterogeneity": 0,
+      "meta_analysis": 3,
+      "missing_data": 1,
+      "mixed_or_repeated_model": 1,
+      "model_diagnostics": 4,
+      "multiple_imputation": 0,
+      "multiplicity": 2,
+      "multivariable_regression": 1,
+      "propensity_method": 0,
+      "sample_size_or_power": 4,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 2
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 1,
+      "introduction": 0,
+      "methods": 0,
+      "results": 1
+    },
+    "abstract_heading_counts": {
+      "background": 1,
+      "conclusion": 5,
+      "methods": 5,
+      "results": 3
+    },
+    "software_mention_counts": {
+      "R": 3
+    },
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 6
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 5
+    }
+  },
+  {
+    "journal": "Journal of Athletic Training",
+    "title_records": 11,
+    "full_text_license_compatible_and_analyzed": 0,
+    "distinct_full_text_sources": 0,
+    "style_evidence_status": "no_license_compatible_full_text_sample",
+    "full_text_coverage_fraction": 0.0,
+    "title_word_count_mean": 14.55,
+    "title_colon_fraction": 0.6364,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "case_report": 1,
+      "cross_sectional": 1,
+      "systematic_review": 1
+    },
+    "statistical_marker_counts": {},
+    "section_marker_counts": {},
+    "abstract_heading_counts": {},
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 10,
+      "review_guideline_or_consensus": 1
+    },
+    "document_kind_counts_full_text": {}
+  },
+  {
+    "journal": "Journal of Bone and Mineral Research",
+    "title_records": 3,
+    "full_text_license_compatible_and_analyzed": 2,
+    "distinct_full_text_sources": 2,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 0.6667,
+    "title_word_count_mean": 13.0,
+    "title_colon_fraction": 0.3333,
+    "title_question_fraction": 0.3333,
+    "title_design_label_counts": {
+      "registry_or_database": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 0,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 0,
+      "exact_or_threshold_p_value": 0,
+      "heterogeneity": 0,
+      "meta_analysis": 0,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 1,
+      "multiple_imputation": 1,
+      "multiplicity": 0,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 0,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 0,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 1,
+      "conclusion": 0,
+      "methods": 0,
+      "results": 0
+    },
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 2,
+      "front_matter_comment_or_correction": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 1,
+      "front_matter_comment_or_correction": 1
+    }
+  },
+  {
+    "journal": "Journal of Bone Metabolism",
+    "title_records": 30,
+    "full_text_license_compatible_and_analyzed": 0,
+    "distinct_full_text_sources": 0,
+    "style_evidence_status": "no_license_compatible_full_text_sample",
+    "full_text_coverage_fraction": 0.0,
+    "title_word_count_mean": 16.1,
+    "title_colon_fraction": 0.6333,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "biomechanical_or_preclinical": 1,
+      "cohort": 2,
+      "cross_sectional": 2,
+      "meta_analysis": 1,
+      "narrative_review": 1,
+      "prospective": 1,
+      "retrospective": 1,
+      "scoping_review": 1
+    },
+    "statistical_marker_counts": {},
+    "section_marker_counts": {},
+    "abstract_heading_counts": {},
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 27,
+      "review_guideline_or_consensus": 3
+    },
+    "document_kind_counts_full_text": {}
+  },
+  {
+    "journal": "Journal of Cachexia, Sarcopenia and Muscle",
+    "title_records": 3,
+    "full_text_license_compatible_and_analyzed": 3,
+    "distinct_full_text_sources": 3,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 1.0,
+    "title_word_count_mean": 13.0,
+    "title_colon_fraction": 0.0,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 1,
+      "effect_estimate": 2,
+      "exact_or_threshold_p_value": 3,
+      "heterogeneity": 3,
+      "meta_analysis": 0,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 1,
+      "model_diagnostics": 1,
+      "multiple_imputation": 1,
+      "multiplicity": 2,
+      "multivariable_regression": 1,
+      "propensity_method": 0,
+      "sample_size_or_power": 2,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 0,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 2,
+      "conclusion": 2,
+      "methods": 3,
+      "results": 2
+    },
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 3
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 3
+    }
+  },
+  {
+    "journal": "Journal of Clinical Densitometry",
+    "title_records": 3,
+    "full_text_license_compatible_and_analyzed": 0,
+    "distinct_full_text_sources": 0,
+    "style_evidence_status": "no_license_compatible_full_text_sample",
+    "full_text_coverage_fraction": 0.0,
+    "title_word_count_mean": 17.67,
+    "title_colon_fraction": 0.3333,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {},
+    "section_marker_counts": {},
+    "abstract_heading_counts": {},
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 3
+    },
+    "document_kind_counts_full_text": {}
+  },
+  {
+    "journal": "Journal of Clinical Orthopaedics and Trauma",
+    "title_records": 2,
+    "full_text_license_compatible_and_analyzed": 1,
+    "distinct_full_text_sources": 1,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 0.5,
+    "title_word_count_mean": 12.0,
+    "title_colon_fraction": 0.5,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "cohort": 1,
+      "retrospective": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 1,
+      "exact_or_threshold_p_value": 1,
+      "heterogeneity": 1,
+      "meta_analysis": 1,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 1,
+      "propensity_method": 0,
+      "sample_size_or_power": 1,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 1
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 0,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 0,
+      "conclusion": 1,
+      "methods": 1,
+      "results": 1
+    },
+    "software_mention_counts": {
+      "R": 1
+    },
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 1,
+      "front_matter_comment_or_correction": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 1
+    }
+  },
+  {
+    "journal": "Journal of Functional Morphology and Kinesiology",
+    "title_records": 1,
+    "full_text_license_compatible_and_analyzed": 1,
+    "distinct_full_text_sources": 1,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 1.0,
+    "title_word_count_mean": 14.0,
+    "title_colon_fraction": 1.0,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "randomized_trial": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 1,
+      "exact_or_threshold_p_value": 1,
+      "heterogeneity": 0,
+      "meta_analysis": 0,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 1,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 1,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 1,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 1,
+      "data_availability": 0,
+      "discussion": 1,
+      "introduction": 1,
+      "methods": 1,
+      "results": 1
+    },
+    "abstract_heading_counts": {
+      "background": 0,
+      "conclusion": 0,
+      "methods": 0,
+      "results": 0
+    },
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 1
+    }
+  },
+  {
+    "journal": "Journal of ISAKOS",
+    "title_records": 2,
+    "full_text_license_compatible_and_analyzed": 2,
+    "distinct_full_text_sources": 2,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 1.0,
+    "title_word_count_mean": 19.5,
+    "title_colon_fraction": 0.5,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "randomized_trial": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 1,
+      "effect_estimate": 2,
+      "exact_or_threshold_p_value": 2,
+      "heterogeneity": 0,
+      "meta_analysis": 1,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 2,
+      "sensitivity_analysis": 2,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 1,
+      "introduction": 0,
+      "methods": 0,
+      "results": 1
+    },
+    "abstract_heading_counts": {
+      "background": 2,
+      "conclusion": 2,
+      "methods": 2,
+      "results": 2
+    },
+    "software_mention_counts": {
+      "R": 1,
+      "SPSS": 1,
+      "Stata": 1
+    },
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 2
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 2
+    }
+  },
+  {
+    "journal": "Journal of Knee Surgery",
+    "title_records": 3,
+    "full_text_license_compatible_and_analyzed": 2,
+    "distinct_full_text_sources": 2,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 0.6667,
+    "title_word_count_mean": 17.33,
+    "title_colon_fraction": 0.6667,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "retrospective": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 2,
+      "exact_or_threshold_p_value": 2,
+      "heterogeneity": 0,
+      "meta_analysis": 1,
+      "missing_data": 1,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 1,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 1,
+      "propensity_method": 1,
+      "sample_size_or_power": 2,
+      "sensitivity_analysis": 1,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 1,
+      "data_availability": 0,
+      "discussion": 1,
+      "introduction": 0,
+      "methods": 1,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 2,
+      "conclusion": 0,
+      "methods": 0,
+      "results": 2
+    },
+    "software_mention_counts": {
+      "SPSS": 2
+    },
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 3
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 2
+    }
+  },
+  {
+    "journal": "Journal of Musculoskeletal and Neuronal Interactions",
+    "title_records": 20,
+    "full_text_license_compatible_and_analyzed": 0,
+    "distinct_full_text_sources": 0,
+    "style_evidence_status": "no_license_compatible_full_text_sample",
+    "full_text_coverage_fraction": 0.0,
+    "title_word_count_mean": 17.85,
+    "title_colon_fraction": 0.65,
+    "title_question_fraction": 0.05,
+    "title_design_label_counts": {
+      "cross_sectional": 4,
+      "prospective": 2,
+      "randomized_trial": 4,
+      "retrospective": 1
+    },
+    "statistical_marker_counts": {},
+    "section_marker_counts": {},
+    "abstract_heading_counts": {},
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 17,
+      "front_matter_comment_or_correction": 3
+    },
+    "document_kind_counts_full_text": {}
+  },
+  {
+    "journal": "Journal of Sports Sciences",
+    "title_records": 7,
+    "full_text_license_compatible_and_analyzed": 5,
+    "distinct_full_text_sources": 5,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 0.7143,
+    "title_word_count_mean": 17.71,
+    "title_colon_fraction": 0.2857,
+    "title_question_fraction": 0.1429,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 3,
+      "exact_or_threshold_p_value": 4,
+      "heterogeneity": 0,
+      "meta_analysis": 2,
+      "missing_data": 1,
+      "mixed_or_repeated_model": 3,
+      "model_diagnostics": 1,
+      "multiple_imputation": 0,
+      "multiplicity": 3,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 3,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 1,
+      "data_availability": 0,
+      "discussion": 2,
+      "introduction": 1,
+      "methods": 1,
+      "results": 2
+    },
+    "abstract_heading_counts": {
+      "background": 5,
+      "conclusion": 0,
+      "methods": 4,
+      "results": 0
+    },
+    "software_mention_counts": {
+      "GraphPad Prism": 1,
+      "R": 1,
+      "SPSS": 1
+    },
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 6,
+      "front_matter_comment_or_correction": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 5
+    }
+  },
+  {
+    "journal": "Journal of Teaching in Physical Education",
+    "title_records": 4,
+    "full_text_license_compatible_and_analyzed": 0,
+    "distinct_full_text_sources": 0,
+    "style_evidence_status": "no_license_compatible_full_text_sample",
+    "full_text_coverage_fraction": 0.0,
+    "title_word_count_mean": 16.0,
+    "title_colon_fraction": 0.75,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "randomized_trial": 1
+    },
+    "statistical_marker_counts": {},
+    "section_marker_counts": {},
+    "abstract_heading_counts": {},
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 4
+    },
+    "document_kind_counts_full_text": {}
+  },
+  {
+    "journal": "JSES International",
+    "title_records": 13,
+    "full_text_license_compatible_and_analyzed": 5,
+    "distinct_full_text_sources": 5,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 0.3846,
+    "title_word_count_mean": 18.31,
+    "title_colon_fraction": 0.6923,
+    "title_question_fraction": 0.0769,
+    "title_design_label_counts": {
+      "cohort": 1,
+      "prospective": 1,
+      "randomized_trial": 1,
+      "retrospective": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 4,
+      "diagnostic_accuracy": 1,
+      "effect_estimate": 3,
+      "exact_or_threshold_p_value": 5,
+      "heterogeneity": 1,
+      "meta_analysis": 2,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 1,
+      "multiple_imputation": 0,
+      "multiplicity": 1,
+      "multivariable_regression": 1,
+      "propensity_method": 2,
+      "sample_size_or_power": 3,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 2,
+      "data_availability": 0,
+      "discussion": 3,
+      "introduction": 0,
+      "methods": 1,
+      "results": 1
+    },
+    "abstract_heading_counts": {
+      "background": 3,
+      "conclusion": 3,
+      "methods": 4,
+      "results": 4
+    },
+    "software_mention_counts": {
+      "SAS": 1,
+      "SPSS": 1,
+      "jamovi": 1
+    },
+    "reporting_guideline_mention_counts": {
+      "CONSORT": 1,
+      "STROBE": 1
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 13
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 5
+    }
+  },
+  {
+    "journal": "Knee",
+    "title_records": 13,
+    "full_text_license_compatible_and_analyzed": 7,
+    "distinct_full_text_sources": 7,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 0.5385,
+    "title_word_count_mean": 15.23,
+    "title_colon_fraction": 0.6923,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "cohort": 1,
+      "meta_analysis": 1,
+      "prospective": 1,
+      "retrospective": 1,
+      "systematic_review": 3
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 7,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 4,
+      "exact_or_threshold_p_value": 6,
+      "heterogeneity": 2,
+      "meta_analysis": 4,
+      "missing_data": 2,
+      "mixed_or_repeated_model": 2,
+      "model_diagnostics": 1,
+      "multiple_imputation": 0,
+      "multiplicity": 1,
+      "multivariable_regression": 1,
+      "propensity_method": 0,
+      "sample_size_or_power": 5,
+      "sensitivity_analysis": 2,
+      "survival_analysis": 1
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 1,
+      "discussion": 0,
+      "introduction": 0,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 0,
+      "conclusion": 7,
+      "methods": 7,
+      "results": 5
+    },
+    "software_mention_counts": {
+      "MATLAB": 1,
+      "R": 1,
+      "SAS": 1,
+      "SPSS": 1
+    },
+    "reporting_guideline_mention_counts": {
+      "PRISMA": 1,
+      "STROBE": 2
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 10,
+      "review_guideline_or_consensus": 3
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 6,
+      "review_guideline_or_consensus": 1
+    }
+  },
+  {
+    "journal": "Knee Surgery and Related Research",
+    "title_records": 3,
+    "full_text_license_compatible_and_analyzed": 1,
+    "distinct_full_text_sources": 1,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 0.3333,
+    "title_word_count_mean": 20.67,
+    "title_colon_fraction": 0.6667,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "cohort": 1,
+      "meta_analysis": 1,
+      "retrospective": 1,
+      "systematic_review": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 1,
+      "exact_or_threshold_p_value": 1,
+      "heterogeneity": 0,
+      "meta_analysis": 1,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 1,
+      "propensity_method": 0,
+      "sample_size_or_power": 1,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 1,
+      "introduction": 0,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 1,
+      "conclusion": 1,
+      "methods": 1,
+      "results": 1
+    },
+    "software_mention_counts": {
+      "SAS": 1
+    },
+    "reporting_guideline_mention_counts": {
+      "CONSORT": 1
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 2,
+      "review_guideline_or_consensus": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 1
+    }
+  },
+  {
+    "journal": "Measurement in Physical Education and Exercise Science",
+    "title_records": 22,
+    "full_text_license_compatible_and_analyzed": 5,
+    "distinct_full_text_sources": 5,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 0.2273,
+    "title_word_count_mean": 15.05,
+    "title_colon_fraction": 0.4091,
+    "title_question_fraction": 0.0455,
+    "title_design_label_counts": {
+      "registry_or_database": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 2,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 5,
+      "exact_or_threshold_p_value": 5,
+      "heterogeneity": 1,
+      "meta_analysis": 4,
+      "missing_data": 1,
+      "mixed_or_repeated_model": 1,
+      "model_diagnostics": 1,
+      "multiple_imputation": 1,
+      "multiplicity": 3,
+      "multivariable_regression": 1,
+      "propensity_method": 0,
+      "sample_size_or_power": 5,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 1,
+      "data_availability": 0,
+      "discussion": 2,
+      "introduction": 1,
+      "methods": 1,
+      "results": 1
+    },
+    "abstract_heading_counts": {
+      "background": 4,
+      "conclusion": 0,
+      "methods": 3,
+      "results": 1
+    },
+    "software_mention_counts": {
+      "SPSS": 1
+    },
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 19,
+      "front_matter_comment_or_correction": 2,
+      "review_guideline_or_consensus": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 5
+    }
+  },
+  {
+    "journal": "Medicine & Science in Sports & Exercise",
+    "title_records": 1,
+    "full_text_license_compatible_and_analyzed": 1,
+    "distinct_full_text_sources": 1,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 1.0,
+    "title_word_count_mean": 12.0,
+    "title_colon_fraction": 0.0,
+    "title_question_fraction": 1.0,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 1,
+      "exact_or_threshold_p_value": 1,
+      "heterogeneity": 0,
+      "meta_analysis": 0,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 1,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 1,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 1,
+      "data_availability": 0,
+      "discussion": 1,
+      "introduction": 1,
+      "methods": 1,
+      "results": 1
+    },
+    "abstract_heading_counts": {
+      "background": 1,
+      "conclusion": 1,
+      "methods": 1,
+      "results": 1
+    },
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 1
+    }
+  },
+  {
+    "journal": "Musculoskeletal Care",
+    "title_records": 1,
+    "full_text_license_compatible_and_analyzed": 0,
+    "distinct_full_text_sources": 0,
+    "style_evidence_status": "no_license_compatible_full_text_sample",
+    "full_text_coverage_fraction": 0.0,
+    "title_word_count_mean": 22.0,
+    "title_colon_fraction": 1.0,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {},
+    "section_marker_counts": {},
+    "abstract_heading_counts": {},
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 1
+    },
+    "document_kind_counts_full_text": {}
+  },
+  {
+    "journal": "Musculoskeletal Surgery",
+    "title_records": 2,
+    "full_text_license_compatible_and_analyzed": 1,
+    "distinct_full_text_sources": 1,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 0.5,
+    "title_word_count_mean": 20.5,
+    "title_colon_fraction": 1.0,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "retrospective": 1,
+      "systematic_review": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 1,
+      "exact_or_threshold_p_value": 1,
+      "heterogeneity": 0,
+      "meta_analysis": 0,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 1,
+      "propensity_method": 0,
+      "sample_size_or_power": 1,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 1,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 1,
+      "conclusion": 1,
+      "methods": 1,
+      "results": 1
+    },
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 1,
+      "review_guideline_or_consensus": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 1
+    }
+  },
+  {
+    "journal": "Open Access Journal of Sports Medicine",
+    "title_records": 9,
+    "full_text_license_compatible_and_analyzed": 9,
+    "distinct_full_text_sources": 9,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 1.0,
+    "title_word_count_mean": 16.44,
+    "title_colon_fraction": 0.7778,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "narrative_review": 1,
+      "prospective": 1,
+      "randomized_trial": 3
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 3,
+      "diagnostic_accuracy": 1,
+      "effect_estimate": 3,
+      "exact_or_threshold_p_value": 5,
+      "heterogeneity": 2,
+      "meta_analysis": 3,
+      "missing_data": 2,
+      "mixed_or_repeated_model": 2,
+      "model_diagnostics": 1,
+      "multiple_imputation": 0,
+      "multiplicity": 1,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 3,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 9,
+      "data_availability": 0,
+      "discussion": 6,
+      "introduction": 7,
+      "methods": 6,
+      "results": 5
+    },
+    "abstract_heading_counts": {
+      "background": 7,
+      "conclusion": 8,
+      "methods": 5,
+      "results": 5
+    },
+    "software_mention_counts": {
+      "SAS": 1,
+      "SPSS": 3
+    },
+    "reporting_guideline_mention_counts": {
+      "CONSORT": 1,
+      "PRISMA": 1
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 8,
+      "review_guideline_or_consensus": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 8,
+      "review_guideline_or_consensus": 1
+    }
+  },
+  {
+    "journal": "Pediatric Exercise Science",
+    "title_records": 3,
+    "full_text_license_compatible_and_analyzed": 0,
+    "distinct_full_text_sources": 0,
+    "style_evidence_status": "no_license_compatible_full_text_sample",
+    "full_text_coverage_fraction": 0.0,
+    "title_word_count_mean": 18.0,
+    "title_colon_fraction": 0.6667,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {},
+    "statistical_marker_counts": {},
+    "section_marker_counts": {},
+    "abstract_heading_counts": {},
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 3
+    },
+    "document_kind_counts_full_text": {}
+  },
+  {
+    "journal": "Physical Education and Sport Pedagogy",
+    "title_records": 30,
+    "full_text_license_compatible_and_analyzed": 14,
+    "distinct_full_text_sources": 14,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 0.4667,
+    "title_word_count_mean": 15.5,
+    "title_colon_fraction": 0.7333,
+    "title_question_fraction": 0.1,
+    "title_design_label_counts": {
+      "narrative_review": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 1,
+      "exact_or_threshold_p_value": 1,
+      "heterogeneity": 1,
+      "meta_analysis": 0,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 1,
+      "model_diagnostics": 1,
+      "multiple_imputation": 0,
+      "multiplicity": 1,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 1,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 11,
+      "data_availability": 0,
+      "discussion": 7,
+      "introduction": 14,
+      "methods": 8,
+      "results": 5
+    },
+    "abstract_heading_counts": {
+      "background": 14,
+      "conclusion": 12,
+      "methods": 11,
+      "results": 6
+    },
+    "software_mention_counts": {
+      "SPSS": 2
+    },
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 29,
+      "review_guideline_or_consensus": 1
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 14
+    }
+  },
+  {
+    "journal": "Physical Therapy in Sport",
+    "title_records": 3,
+    "full_text_license_compatible_and_analyzed": 1,
+    "distinct_full_text_sources": 1,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 0.3333,
+    "title_word_count_mean": 22.0,
+    "title_colon_fraction": 1.0,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "registry_or_database": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 0,
+      "exact_or_threshold_p_value": 1,
+      "heterogeneity": 0,
+      "meta_analysis": 1,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 1,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 1,
+      "propensity_method": 0,
+      "sample_size_or_power": 0,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 0,
+      "introduction": 0,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 0,
+      "conclusion": 1,
+      "methods": 1,
+      "results": 1
+    },
+    "software_mention_counts": {
+      "Stata": 1
+    },
+    "reporting_guideline_mention_counts": {
+      "RECORD": 1
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 3
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 1
+    }
+  },
+  {
+    "journal": "Physician and Sportsmedicine",
+    "title_records": 16,
+    "full_text_license_compatible_and_analyzed": 1,
+    "distinct_full_text_sources": 1,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 0.0625,
+    "title_word_count_mean": 16.62,
+    "title_colon_fraction": 0.5625,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "cohort": 2,
+      "diagnostic_accuracy": 1,
+      "prospective": 1,
+      "registry_or_database": 1,
+      "retrospective": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 1,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 0,
+      "exact_or_threshold_p_value": 0,
+      "heterogeneity": 0,
+      "meta_analysis": 1,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 1,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 0,
+      "data_availability": 0,
+      "discussion": 1,
+      "introduction": 1,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 1,
+      "conclusion": 1,
+      "methods": 1,
+      "results": 1
+    },
+    "software_mention_counts": {
+      "SAS": 1
+    },
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 16
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 1
+    }
+  },
+  {
+    "journal": "Research in Sports Medicine",
+    "title_records": 2,
+    "full_text_license_compatible_and_analyzed": 1,
+    "distinct_full_text_sources": 1,
+    "style_evidence_status": "insufficient_sample_below_five",
+    "full_text_coverage_fraction": 0.5,
+    "title_word_count_mean": 15.5,
+    "title_colon_fraction": 1.0,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "qualitative": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 0,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 0,
+      "exact_or_threshold_p_value": 0,
+      "heterogeneity": 0,
+      "meta_analysis": 0,
+      "missing_data": 0,
+      "mixed_or_repeated_model": 0,
+      "model_diagnostics": 0,
+      "multiple_imputation": 0,
+      "multiplicity": 0,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 0,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 0
+    },
+    "section_marker_counts": {
+      "conclusion": 1,
+      "data_availability": 0,
+      "discussion": 1,
+      "introduction": 1,
+      "methods": 0,
+      "results": 0
+    },
+    "abstract_heading_counts": {
+      "background": 1,
+      "conclusion": 1,
+      "methods": 0,
+      "results": 0
+    },
+    "software_mention_counts": {},
+    "reporting_guideline_mention_counts": {},
+    "document_kind_counts_all": {
+      "article_or_unspecified": 2
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 1
+    }
+  },
+  {
+    "journal": "Research Quarterly for Exercise and Sport",
+    "title_records": 19,
+    "full_text_license_compatible_and_analyzed": 5,
+    "distinct_full_text_sources": 5,
+    "style_evidence_status": "descriptive_sample_minimum_met",
+    "full_text_coverage_fraction": 0.2632,
+    "title_word_count_mean": 15.32,
+    "title_colon_fraction": 0.4211,
+    "title_question_fraction": 0.0,
+    "title_design_label_counts": {
+      "cross_sectional": 2,
+      "randomized_trial": 1
+    },
+    "statistical_marker_counts": {
+      "confidence_interval": 4,
+      "diagnostic_accuracy": 0,
+      "effect_estimate": 5,
+      "exact_or_threshold_p_value": 5,
+      "heterogeneity": 0,
+      "meta_analysis": 4,
+      "missing_data": 1,
+      "mixed_or_repeated_model": 5,
+      "model_diagnostics": 2,
+      "multiple_imputation": 0,
+      "multiplicity": 1,
+      "multivariable_regression": 0,
+      "propensity_method": 0,
+      "sample_size_or_power": 4,
+      "sensitivity_analysis": 0,
+      "survival_analysis": 1
+    },
+    "section_marker_counts": {
+      "conclusion": 1,
+      "data_availability": 0,
+      "discussion": 4,
+      "introduction": 0,
+      "methods": 3,
+      "results": 3
+    },
+    "abstract_heading_counts": {
+      "background": 1,
+      "conclusion": 0,
+      "methods": 3,
+      "results": 4
+    },
+    "software_mention_counts": {
+      "R": 2,
+      "SPSS": 3
+    },
+    "reporting_guideline_mention_counts": {
+      "CONSORT": 2
+    },
+    "document_kind_counts_all": {
+      "article_or_unspecified": 16,
+      "front_matter_comment_or_correction": 3
+    },
+    "document_kind_counts_full_text": {
+      "article_or_unspecified": 5
+    }
+  }
+]

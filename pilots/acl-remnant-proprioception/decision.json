@@ -1,0 +1,24 @@
+{
+  "project_id": "ACL-REMNANT-PROPRIOCEPTION-001",
+  "reviewed_at": "2026-08-11",
+  "decision_type": "accountable_human_novelty_gate",
+  "decision": "no_go_for_duplicate_broad_systematic_review",
+  "rationale": [
+    "A directly focused proprioception systematic review was published in 2022.",
+    "A higher-level systematic review and meta-analysis was published in 2024.",
+    "An RCT-only systematic review and meta-analysis published in 2025 searched through November 2024 and included proprioception.",
+    "A 2026 retrospective cohort is relevant for surveillance but does not alone justify duplicating the same broad review question."
+  ],
+  "decisive_source_ids": [
+    "PMID:35478294",
+    "PMID:38551115",
+    "PMID:40905507",
+    "PMID:41593610"
+  ],
+  "next_action": "Reframe around a defensible unresolved question, such as effect modification by objectively graded remnant quality or continuity, and verify novelty again before protocol registration.",
+  "limitations": [
+    "This is a dated scoping snapshot, not an exhaustive systematic search.",
+    "No study eligibility, outcome extraction, Risk of Bias, or meta-analysis was performed.",
+    "The repository must not convert this decision into an automated novelty score."
+  ]
+}

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medical-research-workbench"
+version = "0.1.0"
+description = "Reproducible, public-safe medical research workflow foundations"
+requires-python = ">=3.11,<3.14"
+authors = [{name = "Mohamed Samir"}]
+license = {text = "Apache-2.0"}
+
+[project.scripts]
+medical-research = "medical_research.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
