@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "medical-research-workbench"
-version = "0.1.0"
-description = "Reproducible, public-safe medical research workflow foundations"
+version = "0.2.0"
+description = "Auditable topic-to-publication workflow foundations for medical research"
 requires-python = ">=3.11,<3.14"
 authors = [{name = "Mohamed Samir"}]
 license = {text = "Apache-2.0"}

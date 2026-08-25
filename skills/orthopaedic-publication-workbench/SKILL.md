@@ -1,108 +1,160 @@
 ---
 name: orthopaedic-publication-workbench
-description: "Build or audit an orthopaedic research publication pack: choose defensible manuscript titles, match a study to journals using current official requirements, write a design-specific protocol and statistical analysis plan, and profile manuscript style from licensed full text. Use for thesis protocols, journal targeting, title review, manuscript readiness, reporting-guideline routing, and statistical-method review. Do not use it to predict acceptance or to replace ethics, statistical, or clinical review."
+description: "Run a persistent, collaborative orthopaedic research project from a professionally specified topic to a defensible publication package. Use for thesis or original-study planning, protocols, search and screening, data extraction, systematic reviews, pairwise meta-analysis, umbrella reviews (overviews of reviews), evidence synthesis, manuscript drafting, journal targeting, submission preparation, and living updates. Resume prior work from the project state; never invent data, citations, approvals, review decisions, or journal rules, and never replace accountable clinical, statistical, ethics, or authorship review."
 ---
 
 # Orthopaedic Publication Workbench
 
-## Purpose
+## Mission
 
-Produce a traceable publication pack whose claims can be reviewed independently. Keep four judgments separate at all times:
+Act as the investigator's persistent research partner from topic to publication. Do the reproducible work, preserve every decision, and resume from the last valid checkpoint on later turns. Do not restart a project or silently change a frozen decision.
 
-1. **Title quality** — clarity, specificity, design accuracy, and absence of hype.
-2. **Journal fit** — scope, article type, and verified submission constraints.
-3. **Research readiness** — protocol, data, ethics, registration, and analysis readiness.
-4. **Editorial outcome** — unknown. Never generate an acceptance probability or an “acceptance score.”
+Keep title quality, methodological quality, research readiness, journal fit, and editorial outcome separate. Never estimate acceptance probability.
 
-## Non-negotiable rules
+For any systematic review, meta-analysis, or umbrella-review route, read `references/systematic-review-methods.md` before freezing the protocol or synthesis plan.
 
-- Do not use the Benha University protocol template, or any other institutional template, as a methodological authority. If the user later requests it, apply it only as an administrative formatting overlay after the independent scientific protocol is complete.
-- Do not reward or penalize a study because of country, university, author identity, or prestige.
-- Do not use universal sample-size, follow-up, p-value, or impact-factor cutoffs as proxies for scientific quality.
-- Do not state a journal requirement unless it was found on an official journal or publisher page and recorded with the exact URL and verification date. Mark all other requirements `pending_verification`.
-- Do not infer journal rules or causal validity from titles, abstracts, or a small sample of published papers.
-- Use only user-owned, openly licensed, public-domain, or otherwise authorized full text for style analysis. Bibliographic metadata may be used for discovery.
-- Keep unpublished theses, identifiable participant data, subscription PDFs, credentials, and copyrighted full text out of public repositories.
-- Treat reporting checklists as minimum reporting frameworks, not substitutes for study design, ethics review, trial registration, or statistical expertise.
+## Start or resume the project
 
-## Workflow
+Create or load a private project workspace. Maintain a versioned `project-state.json` containing:
 
-### 1. Establish provenance and rights
+- stable project ID, owner, route, current stage, status, and last update;
+- frozen topic brief and structured question;
+- protocol, search, analysis, and manuscript version IDs;
+- source cutoff date, source ledger, artifact index, and checksums;
+- decisions with author, date, rationale, and whether results were visible;
+- unresolved blockers, required reviews, approvals, and next action.
 
-Read `references/source-and-rights.md`. Inventory every source, checksum local inputs, record ownership or license basis, and separate discovery metadata from full-text evidence. Stop if protected health information or unclear authority makes the requested use unsafe.
+Use only these statuses: `working`, `blocked`, `awaiting_user_decision`, `awaiting_independent_review`, `verified`, and `submission_ready`. Never use `complete` as a substitute for a missing gate.
 
-### 2. Classify the study before drafting
+At the end of every turn, update the state and report: work completed, artifacts changed, decisions needed, blockers, and the single best next action.
 
-Record the research question, exact design (for example, `retrospective_cohort`, not merely “observational”), intended inference, setting, recruitment stage, intervention/exposure, comparator, outcomes, follow-up, unit of allocation, unit of analysis, whether routinely collected data are used, and whether comparative results have already been seen. Distinguish a proposal from a completed study. Never write results into a pre-data title. If results were seen before protocol/SAP freeze, label the work transparently and record which decisions were post hoc.
+## Route the topic
 
-Do not present a complete pack until the investigator has confirmed the question, exact design, one primary outcome/time point, data source, results visibility, and whether the aim is associational or causal. A draft may continue with missing items only when each is explicit in the blocking unresolved-question list.
+Classify the project before drafting:
 
-Use `references/reporting-guideline-router.md` to select the primary reporting framework and any applicable extension. Recheck the linked official source on the day of use because standards change.
+1. `original_study_or_thesis` — primary clinical or laboratory data will be collected or supplied.
+2. `systematic_review` — evidence will be identified and synthesized without mandatory statistical pooling.
+3. `systematic_review_with_meta_analysis` — compatible study-level effect estimates may be pooled.
+4. `umbrella_review` — systematic reviews are the unit of inclusion; treat “meta-meta-analysis” as this route unless the investigator specifies another valid design.
 
-### 3. Build the protocol
+Normalize the user's topic into a structured brief. Ask only for missing facts that would change eligibility, design, estimand, or feasibility. If the topic is incomplete, produce a clearly provisional brief and a short blocking-question list; do not pretend the protocol is frozen.
 
-Read `references/protocol-core.md` and create a versioned protocol with:
+When this repository is available, use `medical-research init-topic` for a sparse topic, `init-original-study` for a validated original-study/thesis intake, and `init-review` for a validated review intake. Resume strict workflows from the validated `project-state.json`; do not infer a later stage from conversation history. Use `advance-original-study` or `advance-review` only after every referenced artifact exists inside the project and its SHA-256 matches.
 
-- rationale supported by a current, reproducible literature search;
-- one primary objective and a prespecified primary outcome/time point;
-- eligibility, recruitment, consent, ethics, and registration plans;
-- intervention/exposure and comparator definitions detailed enough to reproduce;
-- bias-control measures appropriate to the design;
-- outcome definitions, measurement properties, harms, and data-quality procedures;
-- sample-size justification based on the primary estimand and design assumptions;
-- deviations, amendments, monitoring, dissemination, data-sharing, and authorship plans.
+Do not force diagnostic, prognostic, prevalence, dose-response, network, Bayesian, or individual-participant-data synthesis into the generic pairwise route. Record the method-specific extension and keep the analysis blocked until its protocol, expertise, software, and validator requirements are defined.
 
-For randomized trials, use SPIRIT 2025 and define the estimand before the analysis. Register qualifying clinical trials at or before first participant consent/enrolment as required by ICMJE.
+The current built-in meta-analysis code is a generic inverse-variance calculation check, not a production validator for complex designs or final release analysis. It requires a two-human PoolingApproval, a real in-project artifact checksum, a declared analysis scale, and an effect measure frozen in the intake. Preserve `calculation_check_not_release_analysis` until an independently reproduced, protocol-appropriate analysis passes the statistical gate.
 
-### 4. Write the statistical analysis plan
+## Run the lifecycle
 
-Read `references/statistical-analysis-router.md`. Align each objective, outcome, estimand, effect measure, model, and sensitivity analysis. Specify analysis populations, covariates, clustering/repeated measures, missing-data assumptions, multiplicity, model diagnostics, protocol deviations, and software/version before examining outcome results.
+### 1. Scope, feasibility, and gap check
 
-Lead results with effect estimates and uncertainty. Do not treat statistical significance as clinical importance, do not select tests from normality tests alone, and do not change the primary analysis after viewing results without an explicit dated amendment.
+Define the decision problem, population, intervention or exposure, comparator, outcomes, time points, setting, eligible designs, and intended inference. Search for current reviews, registrations, and pivotal studies. Describe novelty as `supported`, `uncertain`, or `not_supported`; never claim that a quick search proves novelty.
 
-### 5. Generate and assess titles
+For an original study, assess recruitment, data availability, ethics, measurement, and analysis feasibility. For an evidence synthesis, assess likely study volume, review overlap, database access, retrievability, and whether quantitative pooling is plausible.
 
-Create 6–10 candidates only after the study classification and target article type are known. For each candidate, record:
+Freeze `topic-brief-vN` only after investigator confirmation.
 
-- exact study design and population;
-- intervention/exposure and comparator when central;
-- primary construct or outcome when helpful;
-- setting only when scientifically important;
-- whether a journal requires or discourages a design label;
-- unsupported causal language, hype, abbreviations, redundancy, and outcome claims.
+### 2. Protocol, analysis plan, and registration
 
-Score title quality and journal fit separately using transparent reasons. Never convert either into acceptance likelihood. Prefer concise, searchable nouns and accurate design labels over promotional wording.
+Select the current design-specific reporting and protocol frameworks from official sources, recording URLs and verification dates. Read `references/protocol-core.md`, `references/reporting-guideline-router.md`, and `references/statistical-analysis-router.md`.
 
-### 6. Verify journals and profile style
+For an original study, create the protocol, data dictionary or case-report form specification, outcome definitions, sample-size justification, and Statistical Analysis Plan before outcome analysis. Mark ethics, consent, governance, and registration as actual statuses; never invent approval or registration numbers.
 
-Read `references/journal-evidence.md`. Build a separate evidence record for each journal. Verify scope, article type, word/abstract/reference/figure limits, reporting checklist, trial registration, data-sharing, ethics, anonymization, fees, open-access route, preprint policy, and required files directly from official pages.
+For a review, prespecify eligibility, information sources, complete search methods, screening and extraction procedures, effect measures, dependency handling, Risk of Bias, synthesis rules, heterogeneity analyses, certainty assessment, and update policy. Freeze the protocol before screening beyond calibration. Prepare registry fields, but report registration only after a verified registry record exists.
 
-For style profiling, sample recent, relevant, authorized full-text articles and record DOI, article type, date, license, source location, and extraction evidence. Use at least five papers per article type. If authorized full text is unavailable or the user did not request a style profile, set the output to `insufficient_evidence` with the reason; do not block title, protocol, SAP, or preliminary journal-fit work. Separate:
+### 3. Search, retrieval, and deduplication
 
-- explicit rules from author instructions;
-- observed conventions from papers;
-- scientific quality judgments from cosmetic style.
+Build syntax separately for every database and platform. Save the exact query, platform, coverage dates, limits, search date, hit count, export filename, and checksum. Preserve raw exports unchanged. Do not claim comprehensive coverage when a required database, grey-literature source, registry, or update search is missing.
 
-Do not claim that an observed convention is mandatory.
+Deduplicate by normalized DOI first; use normalized title plus year only when DOI evidence is absent; never merge two different non-empty DOIs. Record every merge and reversal.
 
-### 7. Validate and hand off
+Apply `references/source-and-rights.md`. Use metadata and abstracts for discovery where permitted. Use full text only with lawful access; keep protected, subscription, identifiable, or unpublished material out of the public repository.
 
-Create `research-pack.json` using the fields documented by the validator, then run:
+### 4. Screening and study selection
 
-```bash
-python skills/orthopaedic-publication-workbench/scripts/validate_research_pack.py research-pack.json
-```
+Calibrate the eligibility form on a pilot set. Keep reviewer, stage, decision, exclusion reason, date, and source record for every judgment. Use automation to prioritize or flag conflicts, not to impersonate an independent human reviewer.
 
-Return these outputs:
+Do not mark selection verified until the protocol-required independent screening and conflict resolution are recorded. Generate the flow diagram only from the auditable event log; never back-calculate counts.
 
-1. evidence and rights ledger;
-2. design/reporting-guideline decision with source links and dates;
-3. protocol and statistical analysis plan;
-4. title candidate table with separate quality and journal-fit rationales;
-5. journal requirement matrix with `verified`, `stale`, or `pending_verification` status;
-6. manuscript-style observations with source locations;
-7. unresolved questions, required specialist reviews, and a no-fabrication audit.
+### 5. Extraction, appraisal, and certainty
 
-## Required review gates
+Extract each decisive field with document version and page, table, figure, paragraph, or supplement locator. Separate source text, structured value, transformation, and reviewer judgment. Preserve disagreements and resolutions.
 
-Do not label the pack submission-ready until a human investigator confirms the clinical question and feasibility, a statistician reviews the sample-size and SAP, ethics/data-governance/registration requirements are resolved, all decisive journal rules are currently verified with atomic evidence records, every blocking question is resolved, and every full-text use has a recorded rights basis. A validator pass confirms the encoded guardrails; it is not clinical, statistical, ethical, or editorial approval.
+Use a current design-appropriate Risk of Bias or review-appraisal method. Do not infer judgments from titles, snippets, or reporting quality alone. Independently verify primary outcomes, sample sizes, effect estimates, variances, follow-up, and analysis direction before synthesis. Assess certainty only from the verified evidence base and record every downgrade or upgrade rationale.
+
+### 6. Synthesis and statistical analysis
+
+Write a structured narrative synthesis for every review. Pool only studies that answer a sufficiently compatible question; do not use heterogeneity statistics to repair clinical incompatibility.
+
+For pairwise meta-analysis:
+
+- define one effect measure and direction per outcome and time point;
+- preserve arm-level or contrast-level provenance and unit conversions;
+- handle multi-arm studies, repeated outcomes, clustering, sparse or zero events, missing dispersion, and dependent effects explicitly;
+- prespecify the model and estimator; report effect estimates and uncertainty, heterogeneity, and a prediction interval when interpretable;
+- treat subgroup, meta-regression, influence, publication-bias, and small-study-effect analyses as conditional on adequate information;
+- run sensitivity analyses tied to assumptions, Risk of Bias, imputation, and influential studies;
+- produce deterministic scripts, environment or lock information, input checksums, and machine-readable outputs.
+
+For an umbrella review:
+
+- include reviews according to a prespecified scope and minimum methods threshold;
+- map primary-study overlap and report an overlap measure when applicable;
+- compare recency, comprehensiveness, Risk of Bias, and certainty across reviews;
+- avoid double counting and do not pool pooled estimates across overlapping reviews unless a defensible model and dependency analysis were prespecified;
+- return to primary-study data only when the protocol permits it and provenance is complete.
+
+Do not manufacture missing numbers from graphs, impute without a declared rule, reverse outcome direction silently, or call an analysis verified when the code cannot reproduce its tables and figures.
+
+### 7. Manuscript and journal package
+
+Draft only from the verified project artifacts. For an original study, write Results only from supplied, locked, and checked data outputs. For a review, reconcile every abstract, table, figure, and conclusion against the final included-study set and reproducible synthesis.
+
+Produce the route-appropriate manuscript, structured abstract, tables, figures, supplements, reporting checklist, search appendix, protocol and amendment history, data and code statement, CRediT roles, funding, conflicts, AI-use disclosure when required, and limitations that reflect the actual evidence.
+
+Read `references/journal-evidence.md`. Verify the target journal's current official requirements with atomic evidence records immediately before formatting. Build the title page, cover letter, highlights or graphical-abstract brief, anonymized files, and submission checklist only from verified rules. Never submit or communicate externally without explicit user authorization.
+
+### 8. Living follow-up
+
+Freeze the manuscript's search cutoff. Save rerunnable strategies and create an update plan with cadence and decision thresholds. On an update, append new search events, deduplicate against the frozen corpus, screen only new records, rerun affected analyses, version changed conclusions, and update the manuscript transparently. Do not call a review “living” without an active, documented update process.
+
+## Fail-closed release gates
+
+Keep the project below `submission_ready` when any applicable condition remains:
+
+- the question, design, primary outcome, or synthesis unit is unresolved;
+- required search coverage or the final update search is incomplete;
+- selection lacks the prespecified independent review and adjudication;
+- decisive extraction values lack source locators or independent verification;
+- Risk of Bias, certainty, statistical, ethics, consent, governance, or registration work is unresolved;
+- analysis inputs, code, outputs, and manuscript values do not reconcile;
+- the target journal's decisive rules are stale, conflicting, or unverified;
+- rights, privacy, authorship, conflicts, funding, or AI disclosure are unresolved;
+- an accountable investigator, statistician where required, and final human approver have not signed off.
+
+If a gate cannot be completed with available access or evidence, stop that stage, preserve valid work, label the blocker, and provide the exact action needed. Never fill a gap with a plausible claim.
+
+## Preserve established safeguards
+
+- Use the Benha University template, or any institutional template, only as a later administrative formatting overlay; never treat it as methodological authority.
+- Never reward or penalize a topic because of country, university, author identity, prestige, or journal impact factor.
+- Never use universal sample-size, follow-up, P-value, or impact-factor cutoffs as substitutes for design-specific reasoning.
+- Generate titles only after the design and data stage are known. Do not place unobserved results in a pre-data title or use unsupported causal or promotional language.
+- Use only user-owned, openly licensed, public-domain, or otherwise authorized full text for style analysis.
+- Treat reporting checklists as minimum reporting requirements, not proof of valid methods.
+- Keep all patient-level data, unpublished work, subscription content, and credentials outside the public repository.
+- Do not call a topic novel, an analysis valid, a journal eligible, or a package submission-ready unless the relevant evidence and human gates actually pass.
+
+## Required handoff
+
+Return a versioned project package containing, as applicable:
+
+- project state, topic brief, decision log, source and rights ledger;
+- protocol, amendments, registration evidence, data dictionary, and Statistical Analysis Plan;
+- search strategies and logs, raw-export manifest, deduplication log, screening decisions, and flow data;
+- extraction data, appraisal records, certainty evidence, analysis datasets, scripts, logs, tables, and figures;
+- manuscript, supplements, reporting checklist, journal evidence matrix, and submission files;
+- unresolved items, human sign-offs, search cutoff, and living-update plan.
+
+Run every applicable repository validator. Run `python skills/orthopaedic-publication-workbench/scripts/validate_research_pack.py research-pack.json` for the existing research-pack schema. If an artifact class has no implemented validator, report `validator_not_implemented`; do not imply machine validation.
