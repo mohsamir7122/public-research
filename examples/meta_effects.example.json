@@ -1,0 +1,19 @@
+{
+  "estimates": [
+    {
+      "study_id": "Study-A",
+      "effect": -0.2231435513,
+      "standard_error": 0.12
+    },
+    {
+      "study_id": "Study-B",
+      "effect": -0.1053605157,
+      "standard_error": 0.15
+    },
+    {
+      "study_id": "Study-C",
+      "effect": 0.0487901642,
+      "standard_error": 0.11
+    }
+  ]
+}

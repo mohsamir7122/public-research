@@ -1,0 +1,41 @@
+{
+  "study_family": "observational",
+  "working_title": "Recovery trajectories after operative treatment of ankle fractures",
+  "research_question": "Among adults treated operatively for an ankle fracture, which baseline factors are associated with function twelve months after surgery?",
+  "rationale": "Postoperative recovery varies substantially, while locally applicable prognostic information remains limited.",
+  "primary_objective": "To estimate associations between prespecified baseline factors and twelve-month patient-reported function.",
+  "secondary_objectives": [
+    "To describe complications during the first postoperative year."
+  ],
+  "study_design": "Prospective observational cohort study",
+  "design_rationale": "A prospective cohort supports consistent baseline measurement and longitudinal outcome ascertainment without assigning treatment.",
+  "population": "Adults undergoing operative treatment of an acute ankle fracture",
+  "setting": "Orthopaedic trauma service at the participating teaching hospital",
+  "inclusion_criteria": [
+    "Age eighteen years or older",
+    "Operatively managed acute ankle fracture"
+  ],
+  "exclusion_criteria": [
+    "Pathological fracture",
+    "Unable to complete the prespecified outcome instrument"
+  ],
+  "intervention_or_exposure": "Prespecified demographic, injury, and perioperative baseline factors",
+  "comparison_strategy": "Adjusted comparisons across prespecified factor levels; no treatment is assigned",
+  "primary_outcome": "Twelve-month patient-reported ankle function score",
+  "secondary_outcomes": [
+    "Reoperation within twelve months"
+  ],
+  "data_source_and_recruitment": "Consecutive eligible patients approached prospectively with outcomes collected at prespecified visits",
+  "sample_size_basis": "Precision and model-complexity calculations will use the anticipated eligible caseload and prespecified primary analysis",
+  "feasibility_summary": "The service maintains a screening log, trained outcome assessors, and a twelve-month follow-up pathway; access remains subject to institutional authorization",
+  "analysis_overview": "The primary adjusted association model, functional form checks, missing-data handling, and sensitivity analyses will be frozen in the statistical plan",
+  "reporting_framework": "STROBE framework selected by the accountable methods team",
+  "ethics_jurisdiction": "Participating hospital and university research governance",
+  "registration_applicability": "not_required",
+  "registration_basis": "The accountable investigators recorded a jurisdiction-specific assessment that this noninterventional cohort does not require trial registration",
+  "sponsor_or_institution": "Participating university and teaching hospital",
+  "accountable_humans": [
+    "Dr Amina Hassan",
+    "Prof Omar Saleh"
+  ]
+}

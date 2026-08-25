@@ -1,0 +1,39 @@
+{
+  "review_type": "systematic_review_with_meta_analysis",
+  "working_title": "Autograft choice and graft failure after primary ACL reconstruction",
+  "research_question": "In skeletally mature patients undergoing primary ACL reconstruction, how does autograft choice affect graft failure at a minimum of 24 months?",
+  "rationale": "Comparative estimates remain clinically heterogeneous, and a protocol-led synthesis is needed to separate compatible evidence from studies that should not be pooled.",
+  "objective": "To compare graft-failure risk across common autograft choices after primary ACL reconstruction.",
+  "population": "Skeletally mature patients undergoing primary anterior cruciate ligament reconstruction",
+  "intervention_or_exposure": "Bone-patellar tendon-bone autograft",
+  "comparator": "Hamstring tendon autograft",
+  "primary_outcome": "Graft failure at a minimum follow-up of 24 months",
+  "secondary_outcomes": [
+    "Revision ACL reconstruction",
+    "Return to preinjury level of sport"
+  ],
+  "eligible_evidence_types": [
+    "Randomized controlled trials",
+    "Prospective comparative cohort studies"
+  ],
+  "inclusion_criteria": [
+    "Primary ACL reconstruction",
+    "Direct comparison of eligible autografts",
+    "Minimum follow-up of 24 months"
+  ],
+  "exclusion_criteria": [
+    "Revision ACL reconstruction",
+    "Skeletally immature-only cohorts",
+    "No extractable comparative outcome"
+  ],
+  "databases": [
+    "MEDLINE",
+    "Embase",
+    "Scopus"
+  ],
+  "accountable_reviewers": [
+    "Dr Amina Hassan",
+    "Dr Omar Saleh"
+  ],
+  "effect_measure": "Risk ratio for graft failure"
+}

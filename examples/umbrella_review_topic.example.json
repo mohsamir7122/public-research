@@ -1,0 +1,40 @@
+{
+  "review_type": "meta-meta analysis",
+  "working_title": "Return to sport after ACL reconstruction: an umbrella review",
+  "research_question": "What is the review-level evidence on return to sport after anterior cruciate ligament reconstruction in athletes and physically active adults?",
+  "rationale": "Multiple systematic reviews address overlapping populations and outcomes, so an overlap-aware overview is needed before any new primary-study synthesis is considered.",
+  "objective": "To summarize and critically appraise systematic-review evidence on return to sport after ACL reconstruction.",
+  "population": "Athletes and physically active adults after anterior cruciate ligament reconstruction",
+  "intervention_or_exposure": "Anterior cruciate ligament reconstruction and postoperative rehabilitation",
+  "comparator": "Alternative surgical or rehabilitation strategies where reported",
+  "primary_outcome": "Return to preinjury level of sport",
+  "secondary_outcomes": [
+    "Return to any sport",
+    "Time to return to sport",
+    "Subsequent ACL injury"
+  ],
+  "eligible_evidence_types": [
+    "Systematic reviews",
+    "Systematic reviews with meta-analysis"
+  ],
+  "inclusion_criteria": [
+    "Explicit systematic search methods",
+    "ACL reconstruction population",
+    "Reports a return-to-sport outcome"
+  ],
+  "exclusion_criteria": [
+    "Narrative reviews",
+    "Primary studies",
+    "Reviews without extractable ACL-specific findings"
+  ],
+  "databases": [
+    "MEDLINE",
+    "Embase",
+    "Scopus"
+  ],
+  "accountable_reviewers": [
+    "Dr Amina Hassan",
+    "Dr Omar Saleh"
+  ],
+  "effect_measure": ""
+}

@@ -1,4 +1,4 @@
 interface:
-  display_name: "Orthopaedic Publication Workbench"
-  short_description: "Evidence-backed protocols, journal fit, and statistics"
-  default_prompt: "Use $orthopaedic-publication-workbench to prepare an evidence-backed orthopaedic research publication pack."
+  display_name: "Orthopaedic Research Partner"
+  short_description: "Persistent topic-to-publication research workflow"
+  default_prompt: "Use $orthopaedic-publication-workbench to turn my orthopaedic research topic into a persistent, auditable project and guide it through the correct route to a publication package."
